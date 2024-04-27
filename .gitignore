@@ -1,0 +1,16 @@
+private.pem
+priv.pem
+.bash_history
+.bash_logout
+.bashrc
+.config/
+.docker/
+.dotnet/
+.gitconfig
+.profile
+.ssh/
+.viminfo
+.vscode-server/
+.wget-hsts
+llmft/model/
+cache/
