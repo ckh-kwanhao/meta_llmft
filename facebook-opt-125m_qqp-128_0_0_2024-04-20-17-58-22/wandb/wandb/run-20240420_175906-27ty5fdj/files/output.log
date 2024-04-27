@@ -1,0 +1,1334 @@
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight', 'model.decoder.final_layer_norm.weight', 'model.decoder.final_layer_norm.bias', 'model.decoder.layers.0.self_attn.k_proj.weight', 'model.decoder.layers.0.self_attn.k_proj.bias', 'model.decoder.layers.0.self_attn.v_proj.weight', 'model.decoder.layers.0.self_attn.v_proj.bias', 'model.decoder.layers.0.self_attn.q_proj.weight', 'model.decoder.layers.0.self_attn.q_proj.bias', 'model.decoder.layers.0.self_attn.out_proj.weight', 'model.decoder.layers.0.self_attn.out_proj.bias', 'model.decoder.layers.0.self_attn_layer_norm.weight', 'model.decoder.layers.0.self_attn_layer_norm.bias', 'model.decoder.layers.0.fc1.weight', 'model.decoder.layers.0.fc1.bias', 'model.decoder.layers.0.fc2.weight', 'model.decoder.layers.0.fc2.bias', 'model.decoder.layers.0.final_layer_norm.weight', 'model.decoder.layers.0.final_layer_norm.bias', 'model.decoder.layers.1.self_attn.k_proj.weight', 'model.decoder.layers.1.self_attn.k_proj.bias', 'model.decoder.layers.1.self_attn.v_proj.weight', 'model.decoder.layers.1.self_attn.v_proj.bias', 'model.decoder.layers.1.self_attn.q_proj.weight', 'model.decoder.layers.1.self_attn.q_proj.bias', 'model.decoder.layers.1.self_attn.out_proj.weight', 'model.decoder.layers.1.self_attn.out_proj.bias', 'model.decoder.layers.1.self_attn_layer_norm.weight', 'model.decoder.layers.1.self_attn_layer_norm.bias', 'model.decoder.layers.1.fc1.weight', 'model.decoder.layers.1.fc1.bias', 'model.decoder.layers.1.fc2.weight', 'model.decoder.layers.1.fc2.bias', 'model.decoder.layers.1.final_layer_norm.weight', 'model.decoder.layers.1.final_layer_norm.bias', 'model.decoder.layers.2.self_attn.k_proj.weight', 'model.decoder.layers.2.self_attn.k_proj.bias', 'model.decoder.layers.2.self_attn.v_proj.weight', 'model.decoder.layers.2.self_attn.v_proj.bias', 'model.decoder.layers.2.self_attn.q_proj.weight', 'model.decoder.layers.2.self_attn.q_proj.bias', 'model.decoder.layers.2.self_attn.out_proj.weight', 'model.decoder.layers.2.self_attn.out_proj.bias', 'model.decoder.layers.2.self_attn_layer_norm.weight', 'model.decoder.layers.2.self_attn_layer_norm.bias', 'model.decoder.layers.2.fc1.weight', 'model.decoder.layers.2.fc1.bias', 'model.decoder.layers.2.fc2.weight', 'model.decoder.layers.2.fc2.bias', 'model.decoder.layers.2.final_layer_norm.weight', 'model.decoder.layers.2.final_layer_norm.bias', 'model.decoder.layers.3.self_attn.k_proj.weight', 'model.decoder.layers.3.self_attn.k_proj.bias', 'model.decoder.layers.3.self_attn.v_proj.weight', 'model.decoder.layers.3.self_attn.v_proj.bias', 'model.decoder.layers.3.self_attn.q_proj.weight', 'model.decoder.layers.3.self_attn.q_proj.bias', 'model.decoder.layers.3.self_attn.out_proj.weight', 'model.decoder.layers.3.self_attn.out_proj.bias', 'model.decoder.layers.3.self_attn_layer_norm.weight', 'model.decoder.layers.3.self_attn_layer_norm.bias', 'model.decoder.layers.3.fc1.weight', 'model.decoder.layers.3.fc1.bias', 'model.decoder.layers.3.fc2.weight', 'model.decoder.layers.3.fc2.bias', 'model.decoder.layers.3.final_layer_norm.weight', 'model.decoder.layers.3.final_layer_norm.bias', 'model.decoder.layers.4.self_attn.k_proj.weight', 'model.decoder.layers.4.self_attn.k_proj.bias', 'model.decoder.layers.4.self_attn.v_proj.weight', 'model.decoder.layers.4.self_attn.v_proj.bias', 'model.decoder.layers.4.self_attn.q_proj.weight', 'model.decoder.layers.4.self_attn.q_proj.bias', 'model.decoder.layers.4.self_attn.out_proj.weight', 'model.decoder.layers.4.self_attn.out_proj.bias', 'model.decoder.layers.4.self_attn_layer_norm.weight', 'model.decoder.layers.4.self_attn_layer_norm.bias', 'model.decoder.layers.4.fc1.weight', 'model.decoder.layers.4.fc1.bias', 'model.decoder.layers.4.fc2.weight', 'model.decoder.layers.4.fc2.bias', 'model.decoder.layers.4.final_layer_norm.weight', 'model.decoder.layers.4.final_layer_norm.bias', 'model.decoder.layers.5.self_attn.k_proj.weight', 'model.decoder.layers.5.self_attn.k_proj.bias', 'model.decoder.layers.5.self_attn.v_proj.weight', 'model.decoder.layers.5.self_attn.v_proj.bias', 'model.decoder.layers.5.self_attn.q_proj.weight', 'model.decoder.layers.5.self_attn.q_proj.bias', 'model.decoder.layers.5.self_attn.out_proj.weight', 'model.decoder.layers.5.self_attn.out_proj.bias', 'model.decoder.layers.5.self_attn_layer_norm.weight', 'model.decoder.layers.5.self_attn_layer_norm.bias', 'model.decoder.layers.5.fc1.weight', 'model.decoder.layers.5.fc1.bias', 'model.decoder.layers.5.fc2.weight', 'model.decoder.layers.5.fc2.bias', 'model.decoder.layers.5.final_layer_norm.weight', 'model.decoder.layers.5.final_layer_norm.bias', 'model.decoder.layers.6.self_attn.k_proj.weight', 'model.decoder.layers.6.self_attn.k_proj.bias', 'model.decoder.layers.6.self_attn.v_proj.weight', 'model.decoder.layers.6.self_attn.v_proj.bias', 'model.decoder.layers.6.self_attn.q_proj.weight', 'model.decoder.layers.6.self_attn.q_proj.bias', 'model.decoder.layers.6.self_attn.out_proj.weight', 'model.decoder.layers.6.self_attn.out_proj.bias', 'model.decoder.layers.6.self_attn_layer_norm.weight', 'model.decoder.layers.6.self_attn_layer_norm.bias', 'model.decoder.layers.6.fc1.weight', 'model.decoder.layers.6.fc1.bias', 'model.decoder.layers.6.fc2.weight', 'model.decoder.layers.6.fc2.bias', 'model.decoder.layers.6.final_layer_norm.weight', 'model.decoder.layers.6.final_layer_norm.bias', 'model.decoder.layers.7.self_attn.k_proj.weight', 'model.decoder.layers.7.self_attn.k_proj.bias', 'model.decoder.layers.7.self_attn.v_proj.weight', 'model.decoder.layers.7.self_attn.v_proj.bias', 'model.decoder.layers.7.self_attn.q_proj.weight', 'model.decoder.layers.7.self_attn.q_proj.bias', 'model.decoder.layers.7.self_attn.out_proj.weight', 'model.decoder.layers.7.self_attn.out_proj.bias', 'model.decoder.layers.7.self_attn_layer_norm.weight', 'model.decoder.layers.7.self_attn_layer_norm.bias', 'model.decoder.layers.7.fc1.weight', 'model.decoder.layers.7.fc1.bias', 'model.decoder.layers.7.fc2.weight', 'model.decoder.layers.7.fc2.bias', 'model.decoder.layers.7.final_layer_norm.weight', 'model.decoder.layers.7.final_layer_norm.bias', 'model.decoder.layers.8.self_attn.k_proj.weight', 'model.decoder.layers.8.self_attn.k_proj.bias', 'model.decoder.layers.8.self_attn.v_proj.weight', 'model.decoder.layers.8.self_attn.v_proj.bias', 'model.decoder.layers.8.self_attn.q_proj.weight', 'model.decoder.layers.8.self_attn.q_proj.bias', 'model.decoder.layers.8.self_attn.out_proj.weight', 'model.decoder.layers.8.self_attn.out_proj.bias', 'model.decoder.layers.8.self_attn_layer_norm.weight', 'model.decoder.layers.8.self_attn_layer_norm.bias', 'model.decoder.layers.8.fc1.weight', 'model.decoder.layers.8.fc1.bias', 'model.decoder.layers.8.fc2.weight', 'model.decoder.layers.8.fc2.bias', 'model.decoder.layers.8.final_layer_norm.weight', 'model.decoder.layers.8.final_layer_norm.bias', 'model.decoder.layers.9.self_attn.k_proj.weight', 'model.decoder.layers.9.self_attn.k_proj.bias', 'model.decoder.layers.9.self_attn.v_proj.weight', 'model.decoder.layers.9.self_attn.v_proj.bias', 'model.decoder.layers.9.self_attn.q_proj.weight', 'model.decoder.layers.9.self_attn.q_proj.bias', 'model.decoder.layers.9.self_attn.out_proj.weight', 'model.decoder.layers.9.self_attn.out_proj.bias', 'model.decoder.layers.9.self_attn_layer_norm.weight', 'model.decoder.layers.9.self_attn_layer_norm.bias', 'model.decoder.layers.9.fc1.weight', 'model.decoder.layers.9.fc1.bias', 'model.decoder.layers.9.fc2.weight', 'model.decoder.layers.9.fc2.bias', 'model.decoder.layers.9.final_layer_norm.weight', 'model.decoder.layers.9.final_layer_norm.bias', 'model.decoder.layers.10.self_attn.k_proj.weight', 'model.decoder.layers.10.self_attn.k_proj.bias', 'model.decoder.layers.10.self_attn.v_proj.weight', 'model.decoder.layers.10.self_attn.v_proj.bias', 'model.decoder.layers.10.self_attn.q_proj.weight', 'model.decoder.layers.10.self_attn.q_proj.bias', 'model.decoder.layers.10.self_attn.out_proj.weight', 'model.decoder.layers.10.self_attn.out_proj.bias', 'model.decoder.layers.10.self_attn_layer_norm.weight', 'model.decoder.layers.10.self_attn_layer_norm.bias', 'model.decoder.layers.10.fc1.weight', 'model.decoder.layers.10.fc1.bias', 'model.decoder.layers.10.fc2.weight', 'model.decoder.layers.10.fc2.bias', 'model.decoder.layers.10.final_layer_norm.weight', 'model.decoder.layers.10.final_layer_norm.bias', 'model.decoder.layers.11.self_attn.k_proj.weight', 'model.decoder.layers.11.self_attn.k_proj.bias', 'model.decoder.layers.11.self_attn.v_proj.weight', 'model.decoder.layers.11.self_attn.v_proj.bias', 'model.decoder.layers.11.self_attn.q_proj.weight', 'model.decoder.layers.11.self_attn.q_proj.bias', 'model.decoder.layers.11.self_attn.out_proj.weight', 'model.decoder.layers.11.self_attn.out_proj.bias', 'model.decoder.layers.11.self_attn_layer_norm.weight', 'model.decoder.layers.11.self_attn_layer_norm.bias', 'model.decoder.layers.11.fc1.weight', 'model.decoder.layers.11.fc1.bias', 'model.decoder.layers.11.fc2.weight', 'model.decoder.layers.11.fc2.bias', 'model.decoder.layers.11.final_layer_norm.weight', 'model.decoder.layers.11.final_layer_norm.bias']
+Using /cache/torch as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /cache/torch/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.15479326248168945 seconds
+Using /cache/torch as PyTorch extensions root...
+Emitting ninja build file /cache/torch/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module utils...
+Time to load utils op: 0.1519017219543457 seconds
+Parameter Offload: Total persistent parameters: 121344 in 122 params
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0024232864379882812 seconds
+  0%|                                                                                                                                                        | 1/5120 [00:00<1:15:43,  1.13it/s][WARNING|trainer_pt_utils.py:849] 2024-04-20 17:59:12,505 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  0%|                                                                                                                                                        | 1/5120 [00:00<1:15:43,  1.13it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  2%|███▊                                                                                                                                                  | 128/5120 [00:43<2:04:56,  1.50s/it]
+{'loss': 6.1092, 'learning_rate': 4.6875000000000006e-07, 'total_grad_norm': 288.9815030769541, 'epoch': 1.0}
+
+
+
+
+  4%|██████▏                                                                                                                                                    | 4/100 [00:00<00:07, 12.53it/s]
+
+
+
+
+
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                  | 88/100 [00:08<00:01, 10.51it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  5%|███████▌                                                                                                                                              | 256/5120 [01:46<2:01:47,  1.50s/it]
+ 13%|████████████████████▋                                                                                                                                       | 9/68 [00:00<00:05, 11.44it/s]
+
+
+
+
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                      | 58/68 [00:06<00:01,  7.53it/s]
+{'eval_paws-qqp_loss': 0.7890625, 'eval_paws-qqp_accuracy': 0.691285081240768, 'eval_paws-qqp_f1-micro': 0.691285081240768, 'eval_paws-qqp_f1-macro': 0.0988529901059452, 'eval_paws-qqp_frac_non_target_tokens': 0.014771048744460856, 'eval_paws-qqp_runtime': 8.1252, 'eval_paws-qqp_samples_per_second': 83.321, 'eval_paws-qqp_steps_per_second': 8.369, 'epoch': 2.0}
+
+
+
+
+ 83%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                          | 83/100 [00:07<00:01, 10.63it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  8%|███████████▎                                                                                                                                          | 384/5120 [02:48<1:58:11,  1.50s/it]
+{'loss': 1.1367, 'learning_rate': 1.4687500000000001e-06, 'total_grad_norm': 423.37631082426617, 'epoch': 3.0}
+
+
+
+
+  9%|█████████████▉                                                                                                                                             | 9/100 [00:00<00:07, 11.61it/s]
+
+
+
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 95/100 [00:08<00:00, 10.83it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 10%|███████████████                                                                                                                                       | 512/5120 [03:49<1:55:13,  1.50s/it]
+{'loss': 2.2097, 'learning_rate': 1.96875e-06, 'total_grad_norm': 1.1500475798456133, 'epoch': 4.0}
+
+
+
+ 72%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                           | 49/68 [00:05<00:01, 10.69it/s]
+{'eval_paws-qqp_loss': 1.72265625, 'eval_paws-qqp_accuracy': 0.7163958641063516, 'eval_paws-qqp_f1-micro': 0.7163958641063516, 'eval_paws-qqp_f1-macro': 0.27825588066551926, 'eval_paws-qqp_frac_non_target_tokens': 0.0014771048744460858, 'eval_paws-qqp_runtime': 7.7297, 'eval_paws-qqp_samples_per_second': 87.585, 'eval_paws-qqp_steps_per_second': 8.797, 'epoch': 4.0}
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.75it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 12%|██████████████████▉                                                                                                                                     | 639/5120 [04:46<24:04,  3.10it/s]
+ 12%|██████████████████▊                                                                                                                                   | 640/5120 [04:50<1:52:22,  1.50s/it]
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏      | 65/68 [00:06<00:00, 10.76it/s]
+
+
+
+
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 95/100 [00:08<00:00, 10.52it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 15%|██████████████████████▊                                                                                                                                 | 767/5120 [05:47<22:55,  3.16it/s]
+ 15%|██████████████████████▌                                                                                                                               | 768/5120 [05:52<2:01:00,  1.67s/it]
+
+
+
+ 81%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                             | 55/68 [00:05<00:01, 10.66it/s]
+{'eval_paws-qqp_loss': 1.322265625, 'eval_paws-qqp_accuracy': 0.7104874446085672, 'eval_paws-qqp_f1-micro': 0.710487444608567, 'eval_paws-qqp_f1-macro': 0.10393258426966293, 'eval_paws-qqp_frac_non_target_tokens': 0.008862629246676515, 'eval_paws-qqp_runtime': 6.7041, 'eval_paws-qqp_samples_per_second': 100.984, 'eval_paws-qqp_steps_per_second': 10.143, 'epoch': 6.0}
+
+
+
+
+ 83%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                          | 83/100 [00:07<00:01, 10.51it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 18%|██████████████████████████▎                                                                                                                           | 896/5120 [06:54<1:59:13,  1.69s/it]
+  3%|████▌                                                                                                                                                       | 2/68 [00:00<00:03, 19.79it/s]
+
+
+
+
+  9%|█████████████▉                                                                                                                                             | 9/100 [00:00<00:08, 11.29it/s]
+
+
+
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 95/100 [00:08<00:00, 10.36it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 20%|██████████████████████████████▏                                                                                                                        | 1023/5120 [07:50<21:48,  3.13it/s]
+ 20%|█████████████████████████████▊                                                                                                                       | 1024/5120 [07:54<1:55:07,  1.69s/it]
+
+
+
+  0%|                                                                                                                                                                   | 0/100 [00:00<?, ?it/s]
+
+
+
+
+
+ 87%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                    | 87/100 [00:08<00:01, 11.10it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 22%|█████████████████████████████████▌                                                                                                                   | 1152/5120 [08:55<1:49:27,  1.66s/it]
+ 12%|██████████████████▎                                                                                                                                         | 8/68 [00:00<00:05, 11.24it/s]
+
+
+
+ 74%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 50/68 [00:04<00:01, 11.00it/s]
+ 17%|██████████████████████████▏                                                                                                                               | 17/100 [00:01<00:07, 11.25it/s]
+
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.90it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 25%|█████████████████████████████████████▎                                                                                                               | 1280/5120 [09:56<1:43:19,  1.61s/it]
+{'loss': 0.015, 'learning_rate': 4.957031250000001e-06, 'total_grad_norm': 0.003114296611803429, 'epoch': 10.0}
+
+
+
+  5%|███████▊                                                                                                                                                   | 5/100 [00:00<00:07, 12.96it/s]
+
+
+
+
+
+ 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏             | 91/100 [00:08<00:00, 10.91it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 27%|█████████████████████████████████████████▍                                                                                                             | 1407/5120 [10:53<26:35,  2.33it/s]
+ 28%|████████████████████████████████████████▉                                                                                                            | 1408/5120 [10:57<1:37:45,  1.58s/it]
+
+
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                         | 57/68 [00:05<00:01, 10.59it/s]
+
+
+
+
+
+
+ 85%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                       | 85/100 [00:07<00:01, 10.54it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 30%|█████████████████████████████████████████████▎                                                                                                         | 1535/5120 [11:55<19:29,  3.06it/s]
+
+ 30%|████████████████████████████████████████████▋                                                                                                        | 1536/5120 [11:59<1:28:16,  1.48s/it]
+
+
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 59/68 [00:05<00:00, 10.58it/s]
+
+
+
+
+
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                 | 89/100 [00:08<00:01, 10.77it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 32%|█████████████████████████████████████████████████                                                                                                      | 1663/5120 [12:56<17:43,  3.25it/s]
+ 32%|████████████████████████████████████████████████▍                                                                                                    | 1664/5120 [13:00<1:25:35,  1.49s/it]
+
+
+
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                      | 51/68 [00:04<00:01, 10.58it/s]
+{'eval_paws-qqp_loss': 4.54296875, 'eval_paws-qqp_accuracy': 0.3914327917282127, 'eval_paws-qqp_f1-micro': 0.3914327917282127, 'eval_paws-qqp_f1-macro': 0.25978969155345855, 'eval_paws-qqp_frac_non_target_tokens': 0.0014771048744460858, 'eval_paws-qqp_runtime': 6.677, 'eval_paws-qqp_samples_per_second': 101.393, 'eval_paws-qqp_steps_per_second': 10.184, 'epoch': 13.0}
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.70it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 35%|████████████████████████████████████████████████████▊                                                                                                  | 1791/5120 [13:57<16:22,  3.39it/s]
+
+ 35%|████████████████████████████████████████████████████▏                                                                                                | 1792/5120 [14:01<1:20:36,  1.45s/it]
+
+
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                         | 57/68 [00:05<00:01, 10.71it/s]
+
+
+
+
+
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                 | 89/100 [00:08<00:01, 10.56it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 37%|████████████████████████████████████████████████████████▌                                                                                              | 1919/5120 [14:58<15:57,  3.34it/s]
+ 38%|███████████████████████████████████████████████████████▉                                                                                             | 1920/5120 [15:02<1:18:27,  1.47s/it]
+
+
+
+ 74%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 50/68 [00:04<00:01, 10.74it/s]
+{'eval_paws-qqp_loss': 7.08203125, 'eval_paws-qqp_accuracy': 0.31314623338257014, 'eval_paws-qqp_f1-micro': 0.31314623338257014, 'eval_paws-qqp_f1-macro': 0.20308941362504573, 'eval_paws-qqp_frac_non_target_tokens': 0.0014771048744460858, 'eval_paws-qqp_runtime': 6.68, 'eval_paws-qqp_samples_per_second': 101.348, 'eval_paws-qqp_steps_per_second': 10.18, 'epoch': 15.0}
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 11.00it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 40%|████████████████████████████████████████████████████████████▎                                                                                          | 2047/5120 [15:59<15:00,  3.41it/s]
+
+ 40%|███████████████████████████████████████████████████████████▌                                                                                         | 2048/5120 [16:03<1:16:10,  1.49s/it]
+
+
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                      | 58/68 [00:05<00:00, 10.32it/s]
+
+
+
+
+
+ 87%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                    | 87/100 [00:08<00:01, 10.49it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 42%|████████████████████████████████████████████████████████████████▏                                                                                      | 2175/5120 [17:01<14:31,  3.38it/s]
+ 42%|███████████████████████████████████████████████████████████████▎                                                                                     | 2176/5120 [17:05<1:11:11,  1.45s/it]
+
+
+
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 66/68 [00:06<00:00, 10.67it/s]
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 97/100 [00:08<00:00, 10.72it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 45%|███████████████████████████████████████████████████████████████████▉                                                                                   | 2303/5120 [18:02<14:02,  3.34it/s]
+ 45%|███████████████████████████████████████████████████████████████████                                                                                  | 2304/5120 [18:07<1:09:56,  1.49s/it]
+
+
+
+ 76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                    | 52/68 [00:04<00:01, 10.21it/s]
+{'eval_paws-qqp_loss': 5.79296875, 'eval_paws-qqp_accuracy': 0.3914327917282127, 'eval_paws-qqp_f1-micro': 0.3914327917282127, 'eval_paws-qqp_f1-macro': 0.2605896691918197, 'eval_paws-qqp_frac_non_target_tokens': 0.0014771048744460858, 'eval_paws-qqp_runtime': 6.7661, 'eval_paws-qqp_samples_per_second': 100.058, 'eval_paws-qqp_steps_per_second': 10.05, 'epoch': 18.0}
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:09<00:00,  9.67it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 48%|██████████████████████████████████████████████████████████████████████▊                                                                              | 2432/5120 [19:08<1:05:52,  1.47s/it]
+{'loss': 0.0, 'learning_rate': 9.45703125e-06, 'total_grad_norm': 0.0008503090405452743, 'epoch': 19.0}
+
+
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 59/68 [00:05<00:00, 10.56it/s]
+
+
+
+
+
+
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                  | 88/100 [00:08<00:01,  9.93it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 50%|██████████████████████████████████████████████████████████████████████████▌                                                                          | 2560/5120 [20:10<1:03:44,  1.49s/it]
+{'loss': 0.0, 'learning_rate': 9.95703125e-06, 'total_grad_norm': 0.0002065998624061411, 'epoch': 20.0}
+
+
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                      | 58/68 [00:05<00:00, 10.56it/s]
+
+
+
+
+
+
+ 85%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                       | 85/100 [00:08<00:01,  9.76it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 52%|██████████████████████████████████████████████████████████████████████████████▏                                                                      | 2688/5120 [21:12<1:00:11,  1.49s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 0.00011393417635611681, 'epoch': 21.0}
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏      | 65/68 [00:05<00:00, 10.72it/s]
+
+
+
+
+
+
+ 87%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                    | 87/100 [00:08<00:01, 10.58it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 55%|███████████████████████████████████████████████████████████████████████████████████                                                                    | 2815/5120 [22:10<11:28,  3.35it/s]
+ 55%|███████████████████████████████████████████████████████████████████████████████████                                                                    | 2816/5120 [22:14<56:19,  1.47s/it]
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏      | 65/68 [00:06<00:00, 10.84it/s]
+
+
+
+
+
+ 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋            | 92/100 [00:08<00:00, 10.67it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 57%|██████████████████████████████████████████████████████████████████████████████████████▊                                                                | 2943/5120 [23:12<11:03,  3.28it/s]
+ 57%|██████████████████████████████████████████████████████████████████████████████████████▊                                                                | 2944/5120 [23:16<53:55,  1.49s/it]
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [00:06<00:00, 10.77it/s]
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 97/100 [00:09<00:00, 10.62it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 60%|██████████████████████████████████████████████████████████████████████████████████████████▌                                                            | 3071/5120 [24:14<10:21,  3.30it/s]
+ 60%|██████████████████████████████████████████████████████████████████████████████████████████▌                                                            | 3072/5120 [24:18<51:13,  1.50s/it]
+
+
+
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 66/68 [00:06<00:00, 10.64it/s]
+
+
+
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 95/100 [00:09<00:00, 10.90it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 62%|██████████████████████████████████████████████████████████████████████████████████████████████▎                                                        | 3199/5120 [25:16<09:33,  3.35it/s]
+ 62%|██████████████████████████████████████████████████████████████████████████████████████████████▍                                                        | 3200/5120 [25:20<47:50,  1.50s/it]
+
+
+
+ 76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                    | 52/68 [00:04<00:01, 10.45it/s]
+{'eval_paws-qqp_loss': 9.6171875, 'eval_paws-qqp_accuracy': 0.29542097488921715, 'eval_paws-qqp_f1-micro': 0.29542097488921715, 'eval_paws-qqp_f1-macro': 0.16629577556588052, 'eval_paws-qqp_frac_non_target_tokens': 0.0014771048744460858, 'eval_paws-qqp_runtime': 6.8695, 'eval_paws-qqp_samples_per_second': 98.551, 'eval_paws-qqp_steps_per_second': 9.899, 'epoch': 25.0}
+
+
+
+
+ 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊      | 96/100 [00:09<00:00, 10.38it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 65%|██████████████████████████████████████████████████████████████████████████████████████████████████                                                     | 3327/5120 [26:18<09:03,  3.30it/s]
+ 65%|██████████████████████████████████████████████████████████████████████████████████████████████████▏                                                    | 3328/5120 [26:22<45:01,  1.51s/it]
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 68/68 [00:06<00:00,  9.08it/s]
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 97/100 [00:09<00:00, 10.15it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                 | 3456/5120 [27:24<41:04,  1.48s/it]
+{'loss': 0.3586, 'learning_rate': 1e-05, 'total_grad_norm': 0.0005716886240493514, 'epoch': 27.0}
+
+
+
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                         | 57/68 [00:05<00:01,  9.64it/s]
+{'eval_paws-qqp_loss': 6.24609375, 'eval_paws-qqp_accuracy': 0.2983751846381093, 'eval_paws-qqp_f1-micro': 0.2983751846381093, 'eval_paws-qqp_f1-macro': 0.09764774987651355, 'eval_paws-qqp_frac_non_target_tokens': 0.0103397341211226, 'eval_paws-qqp_runtime': 7.0083, 'eval_paws-qqp_samples_per_second': 96.599, 'eval_paws-qqp_steps_per_second': 9.703, 'epoch': 27.0}
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.21it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                             | 3583/5120 [28:22<08:06,  3.16it/s]
+ 70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                             | 3584/5120 [28:26<38:02,  1.49s/it]
+
+
+
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                  | 53/68 [00:05<00:01, 10.31it/s]
+{'eval_paws-qqp_loss': 9.0, 'eval_paws-qqp_accuracy': 0.37813884785819796, 'eval_paws-qqp_f1-micro': 0.37813884785819796, 'eval_paws-qqp_f1-macro': 0.37722029572623805, 'eval_paws-qqp_frac_non_target_tokens': 0.0, 'eval_paws-qqp_runtime': 7.0854, 'eval_paws-qqp_samples_per_second': 95.549, 'eval_paws-qqp_steps_per_second': 9.597, 'epoch': 28.0}
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.61it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 72%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                         | 3712/5120 [29:28<34:38,  1.48s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 0.000545555638774405, 'epoch': 29.0}
+
+
+
+ 79%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                | 54/68 [00:05<00:01, 10.15it/s]
+{'eval_paws-qqp_loss': 6.75390625, 'eval_paws-qqp_accuracy': 0.4963072378138848, 'eval_paws-qqp_f1-micro': 0.4963072378138848, 'eval_paws-qqp_f1-macro': 0.45518286279331566, 'eval_paws-qqp_frac_non_target_tokens': 0.0, 'eval_paws-qqp_runtime': 6.9803, 'eval_paws-qqp_samples_per_second': 96.987, 'eval_paws-qqp_steps_per_second': 9.742, 'epoch': 29.0}
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:09<00:00, 10.85it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                     | 3839/5120 [30:26<06:35,  3.24it/s]
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                     | 3840/5120 [30:31<32:30,  1.52s/it]
+
+
+
+ 74%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 50/68 [00:04<00:01, 10.48it/s]
+{'eval_paws-qqp_loss': 8.21875, 'eval_paws-qqp_accuracy': 0.42836041358936483, 'eval_paws-qqp_f1-micro': 0.42836041358936483, 'eval_paws-qqp_f1-macro': 0.41984920450393604, 'eval_paws-qqp_frac_non_target_tokens': 0.0, 'eval_paws-qqp_runtime': 6.8201, 'eval_paws-qqp_samples_per_second': 99.265, 'eval_paws-qqp_steps_per_second': 9.97, 'epoch': 30.0}
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.77it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                  | 3968/5120 [31:33<30:53,  1.61s/it]
+  4%|██████▉                                                                                                                                                     | 3/68 [00:00<00:04, 15.57it/s]
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋  | 67/68 [00:06<00:00, 10.74it/s]
+
+
+
+
+
+
+ 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊      | 96/100 [00:09<00:00,  7.39it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                              | 4095/5120 [32:30<04:57,  3.44it/s]
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                              | 4096/5120 [32:35<25:21,  1.49s/it]
+
+
+
+  0%|                                                                                                                                                                   | 0/100 [00:00<?, ?it/s]
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉   | 98/100 [00:10<00:00,  6.66it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                          | 4224/5120 [33:37<22:32,  1.51s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 0.00033434180358004364, 'epoch': 33.0}
+
+
+
+  3%|████▋                                                                                                                                                      | 3/100 [00:00<00:05, 16.46it/s]
+
+
+
+
+
+
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊         | 94/100 [00:10<00:00, 10.19it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                      | 4352/5120 [34:39<18:57,  1.48s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 0.0003750964493295887, 'epoch': 34.0}
+
+
+
+  7%|██████████▊                                                                                                                                                | 7/100 [00:00<00:07, 12.08it/s]
+
+
+
+
+
+
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊         | 94/100 [00:10<00:00, 10.37it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 4480/5120 [35:40<15:50,  1.49s/it]
+  0%|                                                                                                                                                                    | 0/68 [00:00<?, ?it/s]
+
+
+
+
+  9%|█████████████▉                                                                                                                                             | 9/100 [00:00<00:08, 10.31it/s]
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:10<00:00, 10.82it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉               | 4608/5120 [36:42<12:35,  1.48s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 0.000147991825194502, 'epoch': 36.0}
+
+
+
+  2%|███                                                                                                                                                        | 2/100 [00:00<00:06, 14.06it/s]
+
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.68it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋           | 4736/5120 [37:44<09:21,  1.46s/it]
+ 16%|█████████████████████████                                                                                                                                  | 11/68 [00:00<00:05, 11.38it/s]
+
+
+
+
+  6%|█████████▎                                                                                                                                                 | 6/100 [00:00<00:07, 12.04it/s]
+
+
+
+
+
+ 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋            | 92/100 [00:08<00:00, 10.98it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍       | 4864/5120 [38:45<06:14,  1.46s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 0.00017529753299392508, 'epoch': 38.0}
+
+
+
+
+  9%|█████████████▉                                                                                                                                             | 9/100 [00:00<00:07, 11.77it/s]
+
+
+
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 95/100 [00:08<00:00, 10.66it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 4992/5120 [39:47<03:06,  1.46s/it]
+{'loss': 0.0, 'learning_rate': 1e-05, 'total_grad_norm': 7.094207121569354e-05, 'epoch': 39.0}
+
+
+
+
+ 11%|████████████████▉                                                                                                                                         | 11/100 [00:00<00:08, 10.75it/s]
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 97/100 [00:08<00:00,  9.78it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 5119/5120 [40:45<00:00,  3.37it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5120/5120 [40:49<00:00,  1.46s/it]
+
+
+
+ 76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                    | 52/68 [00:06<00:01, 10.64it/s]
+
+{'eval_paws-qqp_loss': 8.0625, 'eval_paws-qqp_accuracy': 0.42688330871491875, 'eval_paws-qqp_f1-micro': 0.42688330871491875, 'eval_paws-qqp_f1-macro': 0.4172597391072855, 'eval_paws-qqp_frac_non_target_tokens': 0.0, 'eval_paws-qqp_runtime': 8.1676, 'eval_paws-qqp_samples_per_second': 82.888, 'eval_paws-qqp_steps_per_second': 8.326, 'epoch': 40.0}
+
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 99/100 [00:09<00:00, 10.19it/s]
+{'eval_qqp_loss': 5.484375, 'eval_qqp_accuracy': 0.67, 'eval_qqp_f1-micro': 0.67, 'eval_qqp_f1-macro': 0.6285640963302133, 'eval_qqp_frac_non_target_tokens': 0.0, 'eval_qqp_runtime': 9.8238, 'eval_qqp_samples_per_second': 101.794, 'eval_qqp_steps_per_second': 10.179, 'epoch': 40.0}
+{'train_runtime': 2468.6219, 'train_samples_per_second': 2.074, 'train_steps_per_second': 2.074, 'train_loss': 0.44311144400853664, 'epoch': 40.0}
+***** train metrics *****
+  epoch                    =       40.0
+  train_loss               =     0.4431
+  train_runtime            = 0:41:08.62
+  train_samples            =        128
+  train_samples_per_second =      2.074
+  train_steps_per_second   =      2.074

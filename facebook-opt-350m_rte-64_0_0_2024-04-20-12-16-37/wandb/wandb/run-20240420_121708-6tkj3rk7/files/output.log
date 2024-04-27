@@ -1,0 +1,1014 @@
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight', 'model.decoder.project_out.weight', 'model.decoder.project_in.weight', 'model.decoder.layers.0.self_attn.k_proj.weight', 'model.decoder.layers.0.self_attn.k_proj.bias', 'model.decoder.layers.0.self_attn.v_proj.weight', 'model.decoder.layers.0.self_attn.v_proj.bias', 'model.decoder.layers.0.self_attn.q_proj.weight', 'model.decoder.layers.0.self_attn.q_proj.bias', 'model.decoder.layers.0.self_attn.out_proj.weight', 'model.decoder.layers.0.self_attn.out_proj.bias', 'model.decoder.layers.0.self_attn_layer_norm.weight', 'model.decoder.layers.0.self_attn_layer_norm.bias', 'model.decoder.layers.0.fc1.weight', 'model.decoder.layers.0.fc1.bias', 'model.decoder.layers.0.fc2.weight', 'model.decoder.layers.0.fc2.bias', 'model.decoder.layers.0.final_layer_norm.weight', 'model.decoder.layers.0.final_layer_norm.bias', 'model.decoder.layers.1.self_attn.k_proj.weight', 'model.decoder.layers.1.self_attn.k_proj.bias', 'model.decoder.layers.1.self_attn.v_proj.weight', 'model.decoder.layers.1.self_attn.v_proj.bias', 'model.decoder.layers.1.self_attn.q_proj.weight', 'model.decoder.layers.1.self_attn.q_proj.bias', 'model.decoder.layers.1.self_attn.out_proj.weight', 'model.decoder.layers.1.self_attn.out_proj.bias', 'model.decoder.layers.1.self_attn_layer_norm.weight', 'model.decoder.layers.1.self_attn_layer_norm.bias', 'model.decoder.layers.1.fc1.weight', 'model.decoder.layers.1.fc1.bias', 'model.decoder.layers.1.fc2.weight', 'model.decoder.layers.1.fc2.bias', 'model.decoder.layers.1.final_layer_norm.weight', 'model.decoder.layers.1.final_layer_norm.bias', 'model.decoder.layers.2.self_attn.k_proj.weight', 'model.decoder.layers.2.self_attn.k_proj.bias', 'model.decoder.layers.2.self_attn.v_proj.weight', 'model.decoder.layers.2.self_attn.v_proj.bias', 'model.decoder.layers.2.self_attn.q_proj.weight', 'model.decoder.layers.2.self_attn.q_proj.bias', 'model.decoder.layers.2.self_attn.out_proj.weight', 'model.decoder.layers.2.self_attn.out_proj.bias', 'model.decoder.layers.2.self_attn_layer_norm.weight', 'model.decoder.layers.2.self_attn_layer_norm.bias', 'model.decoder.layers.2.fc1.weight', 'model.decoder.layers.2.fc1.bias', 'model.decoder.layers.2.fc2.weight', 'model.decoder.layers.2.fc2.bias', 'model.decoder.layers.2.final_layer_norm.weight', 'model.decoder.layers.2.final_layer_norm.bias', 'model.decoder.layers.3.self_attn.k_proj.weight', 'model.decoder.layers.3.self_attn.k_proj.bias', 'model.decoder.layers.3.self_attn.v_proj.weight', 'model.decoder.layers.3.self_attn.v_proj.bias', 'model.decoder.layers.3.self_attn.q_proj.weight', 'model.decoder.layers.3.self_attn.q_proj.bias', 'model.decoder.layers.3.self_attn.out_proj.weight', 'model.decoder.layers.3.self_attn.out_proj.bias', 'model.decoder.layers.3.self_attn_layer_norm.weight', 'model.decoder.layers.3.self_attn_layer_norm.bias', 'model.decoder.layers.3.fc1.weight', 'model.decoder.layers.3.fc1.bias', 'model.decoder.layers.3.fc2.weight', 'model.decoder.layers.3.fc2.bias', 'model.decoder.layers.3.final_layer_norm.weight', 'model.decoder.layers.3.final_layer_norm.bias', 'model.decoder.layers.4.self_attn.k_proj.weight', 'model.decoder.layers.4.self_attn.k_proj.bias', 'model.decoder.layers.4.self_attn.v_proj.weight', 'model.decoder.layers.4.self_attn.v_proj.bias', 'model.decoder.layers.4.self_attn.q_proj.weight', 'model.decoder.layers.4.self_attn.q_proj.bias', 'model.decoder.layers.4.self_attn.out_proj.weight', 'model.decoder.layers.4.self_attn.out_proj.bias', 'model.decoder.layers.4.self_attn_layer_norm.weight', 'model.decoder.layers.4.self_attn_layer_norm.bias', 'model.decoder.layers.4.fc1.weight', 'model.decoder.layers.4.fc1.bias', 'model.decoder.layers.4.fc2.weight', 'model.decoder.layers.4.fc2.bias', 'model.decoder.layers.4.final_layer_norm.weight', 'model.decoder.layers.4.final_layer_norm.bias', 'model.decoder.layers.5.self_attn.k_proj.weight', 'model.decoder.layers.5.self_attn.k_proj.bias', 'model.decoder.layers.5.self_attn.v_proj.weight', 'model.decoder.layers.5.self_attn.v_proj.bias', 'model.decoder.layers.5.self_attn.q_proj.weight', 'model.decoder.layers.5.self_attn.q_proj.bias', 'model.decoder.layers.5.self_attn.out_proj.weight', 'model.decoder.layers.5.self_attn.out_proj.bias', 'model.decoder.layers.5.self_attn_layer_norm.weight', 'model.decoder.layers.5.self_attn_layer_norm.bias', 'model.decoder.layers.5.fc1.weight', 'model.decoder.layers.5.fc1.bias', 'model.decoder.layers.5.fc2.weight', 'model.decoder.layers.5.fc2.bias', 'model.decoder.layers.5.final_layer_norm.weight', 'model.decoder.layers.5.final_layer_norm.bias', 'model.decoder.layers.6.self_attn.k_proj.weight', 'model.decoder.layers.6.self_attn.k_proj.bias', 'model.decoder.layers.6.self_attn.v_proj.weight', 'model.decoder.layers.6.self_attn.v_proj.bias', 'model.decoder.layers.6.self_attn.q_proj.weight', 'model.decoder.layers.6.self_attn.q_proj.bias', 'model.decoder.layers.6.self_attn.out_proj.weight', 'model.decoder.layers.6.self_attn.out_proj.bias', 'model.decoder.layers.6.self_attn_layer_norm.weight', 'model.decoder.layers.6.self_attn_layer_norm.bias', 'model.decoder.layers.6.fc1.weight', 'model.decoder.layers.6.fc1.bias', 'model.decoder.layers.6.fc2.weight', 'model.decoder.layers.6.fc2.bias', 'model.decoder.layers.6.final_layer_norm.weight', 'model.decoder.layers.6.final_layer_norm.bias', 'model.decoder.layers.7.self_attn.k_proj.weight', 'model.decoder.layers.7.self_attn.k_proj.bias', 'model.decoder.layers.7.self_attn.v_proj.weight', 'model.decoder.layers.7.self_attn.v_proj.bias', 'model.decoder.layers.7.self_attn.q_proj.weight', 'model.decoder.layers.7.self_attn.q_proj.bias', 'model.decoder.layers.7.self_attn.out_proj.weight', 'model.decoder.layers.7.self_attn.out_proj.bias', 'model.decoder.layers.7.self_attn_layer_norm.weight', 'model.decoder.layers.7.self_attn_layer_norm.bias', 'model.decoder.layers.7.fc1.weight', 'model.decoder.layers.7.fc1.bias', 'model.decoder.layers.7.fc2.weight', 'model.decoder.layers.7.fc2.bias', 'model.decoder.layers.7.final_layer_norm.weight', 'model.decoder.layers.7.final_layer_norm.bias', 'model.decoder.layers.8.self_attn.k_proj.weight', 'model.decoder.layers.8.self_attn.k_proj.bias', 'model.decoder.layers.8.self_attn.v_proj.weight', 'model.decoder.layers.8.self_attn.v_proj.bias', 'model.decoder.layers.8.self_attn.q_proj.weight', 'model.decoder.layers.8.self_attn.q_proj.bias', 'model.decoder.layers.8.self_attn.out_proj.weight', 'model.decoder.layers.8.self_attn.out_proj.bias', 'model.decoder.layers.8.self_attn_layer_norm.weight', 'model.decoder.layers.8.self_attn_layer_norm.bias', 'model.decoder.layers.8.fc1.weight', 'model.decoder.layers.8.fc1.bias', 'model.decoder.layers.8.fc2.weight', 'model.decoder.layers.8.fc2.bias', 'model.decoder.layers.8.final_layer_norm.weight', 'model.decoder.layers.8.final_layer_norm.bias', 'model.decoder.layers.9.self_attn.k_proj.weight', 'model.decoder.layers.9.self_attn.k_proj.bias', 'model.decoder.layers.9.self_attn.v_proj.weight', 'model.decoder.layers.9.self_attn.v_proj.bias', 'model.decoder.layers.9.self_attn.q_proj.weight', 'model.decoder.layers.9.self_attn.q_proj.bias', 'model.decoder.layers.9.self_attn.out_proj.weight', 'model.decoder.layers.9.self_attn.out_proj.bias', 'model.decoder.layers.9.self_attn_layer_norm.weight', 'model.decoder.layers.9.self_attn_layer_norm.bias', 'model.decoder.layers.9.fc1.weight', 'model.decoder.layers.9.fc1.bias', 'model.decoder.layers.9.fc2.weight', 'model.decoder.layers.9.fc2.bias', 'model.decoder.layers.9.final_layer_norm.weight', 'model.decoder.layers.9.final_layer_norm.bias', 'model.decoder.layers.10.self_attn.k_proj.weight', 'model.decoder.layers.10.self_attn.k_proj.bias', 'model.decoder.layers.10.self_attn.v_proj.weight', 'model.decoder.layers.10.self_attn.v_proj.bias', 'model.decoder.layers.10.self_attn.q_proj.weight', 'model.decoder.layers.10.self_attn.q_proj.bias', 'model.decoder.layers.10.self_attn.out_proj.weight', 'model.decoder.layers.10.self_attn.out_proj.bias', 'model.decoder.layers.10.self_attn_layer_norm.weight', 'model.decoder.layers.10.self_attn_layer_norm.bias', 'model.decoder.layers.10.fc1.weight', 'model.decoder.layers.10.fc1.bias', 'model.decoder.layers.10.fc2.weight', 'model.decoder.layers.10.fc2.bias', 'model.decoder.layers.10.final_layer_norm.weight', 'model.decoder.layers.10.final_layer_norm.bias', 'model.decoder.layers.11.self_attn.k_proj.weight', 'model.decoder.layers.11.self_attn.k_proj.bias', 'model.decoder.layers.11.self_attn.v_proj.weight', 'model.decoder.layers.11.self_attn.v_proj.bias', 'model.decoder.layers.11.self_attn.q_proj.weight', 'model.decoder.layers.11.self_attn.q_proj.bias', 'model.decoder.layers.11.self_attn.out_proj.weight', 'model.decoder.layers.11.self_attn.out_proj.bias', 'model.decoder.layers.11.self_attn_layer_norm.weight', 'model.decoder.layers.11.self_attn_layer_norm.bias', 'model.decoder.layers.11.fc1.weight', 'model.decoder.layers.11.fc1.bias', 'model.decoder.layers.11.fc2.weight', 'model.decoder.layers.11.fc2.bias', 'model.decoder.layers.11.final_layer_norm.weight', 'model.decoder.layers.11.final_layer_norm.bias', 'model.decoder.layers.12.self_attn.k_proj.weight', 'model.decoder.layers.12.self_attn.k_proj.bias', 'model.decoder.layers.12.self_attn.v_proj.weight', 'model.decoder.layers.12.self_attn.v_proj.bias', 'model.decoder.layers.12.self_attn.q_proj.weight', 'model.decoder.layers.12.self_attn.q_proj.bias', 'model.decoder.layers.12.self_attn.out_proj.weight', 'model.decoder.layers.12.self_attn.out_proj.bias', 'model.decoder.layers.12.self_attn_layer_norm.weight', 'model.decoder.layers.12.self_attn_layer_norm.bias', 'model.decoder.layers.12.fc1.weight', 'model.decoder.layers.12.fc1.bias', 'model.decoder.layers.12.fc2.weight', 'model.decoder.layers.12.fc2.bias', 'model.decoder.layers.12.final_layer_norm.weight', 'model.decoder.layers.12.final_layer_norm.bias', 'model.decoder.layers.13.self_attn.k_proj.weight', 'model.decoder.layers.13.self_attn.k_proj.bias', 'model.decoder.layers.13.self_attn.v_proj.weight', 'model.decoder.layers.13.self_attn.v_proj.bias', 'model.decoder.layers.13.self_attn.q_proj.weight', 'model.decoder.layers.13.self_attn.q_proj.bias', 'model.decoder.layers.13.self_attn.out_proj.weight', 'model.decoder.layers.13.self_attn.out_proj.bias', 'model.decoder.layers.13.self_attn_layer_norm.weight', 'model.decoder.layers.13.self_attn_layer_norm.bias', 'model.decoder.layers.13.fc1.weight', 'model.decoder.layers.13.fc1.bias', 'model.decoder.layers.13.fc2.weight', 'model.decoder.layers.13.fc2.bias', 'model.decoder.layers.13.final_layer_norm.weight', 'model.decoder.layers.13.final_layer_norm.bias', 'model.decoder.layers.14.self_attn.k_proj.weight', 'model.decoder.layers.14.self_attn.k_proj.bias', 'model.decoder.layers.14.self_attn.v_proj.weight', 'model.decoder.layers.14.self_attn.v_proj.bias', 'model.decoder.layers.14.self_attn.q_proj.weight', 'model.decoder.layers.14.self_attn.q_proj.bias', 'model.decoder.layers.14.self_attn.out_proj.weight', 'model.decoder.layers.14.self_attn.out_proj.bias', 'model.decoder.layers.14.self_attn_layer_norm.weight', 'model.decoder.layers.14.self_attn_layer_norm.bias', 'model.decoder.layers.14.fc1.weight', 'model.decoder.layers.14.fc1.bias', 'model.decoder.layers.14.fc2.weight', 'model.decoder.layers.14.fc2.bias', 'model.decoder.layers.14.final_layer_norm.weight', 'model.decoder.layers.14.final_layer_norm.bias', 'model.decoder.layers.15.self_attn.k_proj.weight', 'model.decoder.layers.15.self_attn.k_proj.bias', 'model.decoder.layers.15.self_attn.v_proj.weight', 'model.decoder.layers.15.self_attn.v_proj.bias', 'model.decoder.layers.15.self_attn.q_proj.weight', 'model.decoder.layers.15.self_attn.q_proj.bias', 'model.decoder.layers.15.self_attn.out_proj.weight', 'model.decoder.layers.15.self_attn.out_proj.bias', 'model.decoder.layers.15.self_attn_layer_norm.weight', 'model.decoder.layers.15.self_attn_layer_norm.bias', 'model.decoder.layers.15.fc1.weight', 'model.decoder.layers.15.fc1.bias', 'model.decoder.layers.15.fc2.weight', 'model.decoder.layers.15.fc2.bias', 'model.decoder.layers.15.final_layer_norm.weight', 'model.decoder.layers.15.final_layer_norm.bias', 'model.decoder.layers.16.self_attn.k_proj.weight', 'model.decoder.layers.16.self_attn.k_proj.bias', 'model.decoder.layers.16.self_attn.v_proj.weight', 'model.decoder.layers.16.self_attn.v_proj.bias', 'model.decoder.layers.16.self_attn.q_proj.weight', 'model.decoder.layers.16.self_attn.q_proj.bias', 'model.decoder.layers.16.self_attn.out_proj.weight', 'model.decoder.layers.16.self_attn.out_proj.bias', 'model.decoder.layers.16.self_attn_layer_norm.weight', 'model.decoder.layers.16.self_attn_layer_norm.bias', 'model.decoder.layers.16.fc1.weight', 'model.decoder.layers.16.fc1.bias', 'model.decoder.layers.16.fc2.weight', 'model.decoder.layers.16.fc2.bias', 'model.decoder.layers.16.final_layer_norm.weight', 'model.decoder.layers.16.final_layer_norm.bias', 'model.decoder.layers.17.self_attn.k_proj.weight', 'model.decoder.layers.17.self_attn.k_proj.bias', 'model.decoder.layers.17.self_attn.v_proj.weight', 'model.decoder.layers.17.self_attn.v_proj.bias', 'model.decoder.layers.17.self_attn.q_proj.weight', 'model.decoder.layers.17.self_attn.q_proj.bias', 'model.decoder.layers.17.self_attn.out_proj.weight', 'model.decoder.layers.17.self_attn.out_proj.bias', 'model.decoder.layers.17.self_attn_layer_norm.weight', 'model.decoder.layers.17.self_attn_layer_norm.bias', 'model.decoder.layers.17.fc1.weight', 'model.decoder.layers.17.fc1.bias', 'model.decoder.layers.17.fc2.weight', 'model.decoder.layers.17.fc2.bias', 'model.decoder.layers.17.final_layer_norm.weight', 'model.decoder.layers.17.final_layer_norm.bias', 'model.decoder.layers.18.self_attn.k_proj.weight', 'model.decoder.layers.18.self_attn.k_proj.bias', 'model.decoder.layers.18.self_attn.v_proj.weight', 'model.decoder.layers.18.self_attn.v_proj.bias', 'model.decoder.layers.18.self_attn.q_proj.weight', 'model.decoder.layers.18.self_attn.q_proj.bias', 'model.decoder.layers.18.self_attn.out_proj.weight', 'model.decoder.layers.18.self_attn.out_proj.bias', 'model.decoder.layers.18.self_attn_layer_norm.weight', 'model.decoder.layers.18.self_attn_layer_norm.bias', 'model.decoder.layers.18.fc1.weight', 'model.decoder.layers.18.fc1.bias', 'model.decoder.layers.18.fc2.weight', 'model.decoder.layers.18.fc2.bias', 'model.decoder.layers.18.final_layer_norm.weight', 'model.decoder.layers.18.final_layer_norm.bias', 'model.decoder.layers.19.self_attn.k_proj.weight', 'model.decoder.layers.19.self_attn.k_proj.bias', 'model.decoder.layers.19.self_attn.v_proj.weight', 'model.decoder.layers.19.self_attn.v_proj.bias', 'model.decoder.layers.19.self_attn.q_proj.weight', 'model.decoder.layers.19.self_attn.q_proj.bias', 'model.decoder.layers.19.self_attn.out_proj.weight', 'model.decoder.layers.19.self_attn.out_proj.bias', 'model.decoder.layers.19.self_attn_layer_norm.weight', 'model.decoder.layers.19.self_attn_layer_norm.bias', 'model.decoder.layers.19.fc1.weight', 'model.decoder.layers.19.fc1.bias', 'model.decoder.layers.19.fc2.weight', 'model.decoder.layers.19.fc2.bias', 'model.decoder.layers.19.final_layer_norm.weight', 'model.decoder.layers.19.final_layer_norm.bias', 'model.decoder.layers.20.self_attn.k_proj.weight', 'model.decoder.layers.20.self_attn.k_proj.bias', 'model.decoder.layers.20.self_attn.v_proj.weight', 'model.decoder.layers.20.self_attn.v_proj.bias', 'model.decoder.layers.20.self_attn.q_proj.weight', 'model.decoder.layers.20.self_attn.q_proj.bias', 'model.decoder.layers.20.self_attn.out_proj.weight', 'model.decoder.layers.20.self_attn.out_proj.bias', 'model.decoder.layers.20.self_attn_layer_norm.weight', 'model.decoder.layers.20.self_attn_layer_norm.bias', 'model.decoder.layers.20.fc1.weight', 'model.decoder.layers.20.fc1.bias', 'model.decoder.layers.20.fc2.weight', 'model.decoder.layers.20.fc2.bias', 'model.decoder.layers.20.final_layer_norm.weight', 'model.decoder.layers.20.final_layer_norm.bias', 'model.decoder.layers.21.self_attn.k_proj.weight', 'model.decoder.layers.21.self_attn.k_proj.bias', 'model.decoder.layers.21.self_attn.v_proj.weight', 'model.decoder.layers.21.self_attn.v_proj.bias', 'model.decoder.layers.21.self_attn.q_proj.weight', 'model.decoder.layers.21.self_attn.q_proj.bias', 'model.decoder.layers.21.self_attn.out_proj.weight', 'model.decoder.layers.21.self_attn.out_proj.bias', 'model.decoder.layers.21.self_attn_layer_norm.weight', 'model.decoder.layers.21.self_attn_layer_norm.bias', 'model.decoder.layers.21.fc1.weight', 'model.decoder.layers.21.fc1.bias', 'model.decoder.layers.21.fc2.weight', 'model.decoder.layers.21.fc2.bias', 'model.decoder.layers.21.final_layer_norm.weight', 'model.decoder.layers.21.final_layer_norm.bias', 'model.decoder.layers.22.self_attn.k_proj.weight', 'model.decoder.layers.22.self_attn.k_proj.bias', 'model.decoder.layers.22.self_attn.v_proj.weight', 'model.decoder.layers.22.self_attn.v_proj.bias', 'model.decoder.layers.22.self_attn.q_proj.weight', 'model.decoder.layers.22.self_attn.q_proj.bias', 'model.decoder.layers.22.self_attn.out_proj.weight', 'model.decoder.layers.22.self_attn.out_proj.bias', 'model.decoder.layers.22.self_attn_layer_norm.weight', 'model.decoder.layers.22.self_attn_layer_norm.bias', 'model.decoder.layers.22.fc1.weight', 'model.decoder.layers.22.fc1.bias', 'model.decoder.layers.22.fc2.weight', 'model.decoder.layers.22.fc2.bias', 'model.decoder.layers.22.final_layer_norm.weight', 'model.decoder.layers.22.final_layer_norm.bias', 'model.decoder.layers.23.self_attn.k_proj.weight', 'model.decoder.layers.23.self_attn.k_proj.bias', 'model.decoder.layers.23.self_attn.v_proj.weight', 'model.decoder.layers.23.self_attn.v_proj.bias', 'model.decoder.layers.23.self_attn.q_proj.weight', 'model.decoder.layers.23.self_attn.q_proj.bias', 'model.decoder.layers.23.self_attn.out_proj.weight', 'model.decoder.layers.23.self_attn.out_proj.bias', 'model.decoder.layers.23.self_attn_layer_norm.weight', 'model.decoder.layers.23.self_attn_layer_norm.bias', 'model.decoder.layers.23.fc1.weight', 'model.decoder.layers.23.fc1.bias', 'model.decoder.layers.23.fc2.weight', 'model.decoder.layers.23.fc2.bias', 'model.decoder.layers.23.final_layer_norm.weight', 'model.decoder.layers.23.final_layer_norm.bias', 'score.dense.weight', 'score.dense.bias', 'score.output.weight', 'score.output.bias']
+Using /cache/torch as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /cache/torch/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.15620851516723633 seconds
+Using /cache/torch as PyTorch extensions root...
+Emitting ninja build file /cache/torch/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module utils...
+Time to load utils op: 0.15451598167419434 seconds
+Parameter Offload: Total persistent parameters: 321026 in 243 params
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0018558502197265625 seconds
+  0%|                                                                                                                                                          | 1/2048 [00:01<38:14,  1.12s/it][WARNING|trainer_pt_utils.py:849] 2024-04-20 12:17:14,822 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  0%|                                                                                                                                                          | 1/2048 [00:01<38:14,  1.12s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  3%|████▋                                                                                                                                                    | 62/2048 [00:41<20:28,  1.62it/s]
+  3%|████▊                                                                                                                                                    | 64/2048 [00:42<20:29,  1.61it/s]
+
+
+
+
+
+  7%|███████████▏                                                                                                                                                | 2/28 [00:00<00:02, 11.39it/s]
+
+
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉           | 26/28 [00:04<00:00,  5.78it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  6%|█████████▍                                                                                                                                              | 127/2048 [01:47<19:57,  1.60it/s]
+  6%|█████████▌                                                                                                                                              | 128/2048 [01:48<22:25,  1.43it/s]
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 49/52 [00:09<00:00,  5.82it/s]
+
+
+
+ 71%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                            | 20/28 [00:03<00:01,  5.86it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  9%|██████████████▎                                                                                                                                         | 192/2048 [02:43<19:11,  1.61it/s]
+  4%|██████                                                                                                                                                      | 2/52 [00:00<00:04, 11.82it/s]
+
+
+
+
+
+  0%|                                                                                                                                                                    | 0/28 [00:00<?, ?it/s]
+
+
+
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                      | 24/28 [00:03<00:00,  5.82it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 12%|███████████████████                                                                                                                                     | 256/2048 [03:49<22:53,  1.30it/s]
+  4%|██████                                                                                                                                                      | 2/52 [00:00<00:12,  3.93it/s]
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████               | 47/52 [00:08<00:00,  5.75it/s]
+
+
+
+ 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                 | 19/28 [00:03<00:01,  5.86it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 16%|███████████████████████▊                                                                                                                                | 320/2048 [04:54<18:52,  1.53it/s]
+{'loss': 0.0, 'learning_rate': 3.056640625e-05, 'total_grad_norm': 1.879735465262376e-05, 'epoch': 5.0}
+
+
+
+
+ 21%|█████████████████████████████████▍                                                                                                                          | 6/28 [00:00<00:03,  6.43it/s]
+
+
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉           | 26/28 [00:04<00:00,  5.51it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 19%|████████████████████████████▌                                                                                                                           | 384/2048 [05:49<20:56,  1.32it/s]
+ 10%|███████████████                                                                                                                                             | 5/52 [00:01<00:11,  4.26it/s]
+
+
+
+
+
+ 32%|██████████████████████████████████████████████████▏                                                                                                         | 9/28 [00:01<00:03,  6.02it/s]
+
+
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                      | 21/28 [00:03<00:01,  5.79it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 22%|█████████████████████████████████▏                                                                                                                      | 447/2048 [06:54<17:05,  1.56it/s]
+ 22%|█████████████████████████████████▎                                                                                                                      | 448/2048 [06:55<16:57,  1.57it/s]
+
+
+
+
+  7%|███████████▏                                                                                                                                                | 2/28 [00:00<00:02, 11.79it/s]
+
+
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉           | 26/28 [00:04<00:00,  5.40it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 25%|██████████████████████████████████████                                                                                                                  | 512/2048 [07:59<17:14,  1.49it/s]
+ 12%|██████████████████                                                                                                                                          | 6/52 [00:00<00:07,  6.28it/s]
+
+
+
+
+ 79%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                | 41/52 [00:06<00:01,  5.77it/s]
+{'eval_cola-ood_loss': 0.97705078125, 'eval_cola-ood_accuracy': 0.686046511627907, 'eval_cola-ood_runtime': 9.2792, 'eval_cola-ood_samples_per_second': 55.608, 'eval_cola-ood_steps_per_second': 5.604, 'epoch': 8.0}
+
+
+ 82%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                           | 23/28 [00:03<00:00,  5.52it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 28%|██████████████████████████████████████████▊                                                                                                             | 576/2048 [08:55<15:40,  1.57it/s]
+ 17%|███████████████████████████                                                                                                                                 | 9/52 [00:01<00:07,  5.90it/s]
+
+
+
+
+  7%|███████████▏                                                                                                                                                | 2/28 [00:00<00:02, 11.59it/s]
+
+
+
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                      | 24/28 [00:04<00:00,  5.28it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 31%|███████████████████████████████████████████████▌                                                                                                        | 640/2048 [10:01<14:38,  1.60it/s]
+{'loss': 1.6051, 'learning_rate': 6.171875e-05, 'total_grad_norm': 38.121458507120984, 'epoch': 10.0}
+
+
+
+
+  0%|                                                                                                                                                                    | 0/28 [00:00<?, ?it/s]
+
+
+
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                      | 24/28 [00:04<00:00,  5.68it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 34%|████████████████████████████████████████████████████▎                                                                                                   | 704/2048 [11:07<29:59,  1.34s/it]
+{'loss': 0.9547, 'learning_rate': 6.796875000000001e-05, 'total_grad_norm': 5.328768475612118, 'epoch': 11.0}
+
+
+
+
+ 14%|██████████████████████▎                                                                                                                                     | 4/28 [00:00<00:03,  7.03it/s]
+
+
+
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍     | 27/28 [00:04<00:00,  5.69it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 38%|█████████████████████████████████████████████████████████                                                                                               | 768/2048 [12:02<13:08,  1.62it/s]
+ 13%|█████████████████████                                                                                                                                       | 7/52 [00:01<00:07,  6.24it/s]
+
+
+
+
+
+ 43%|██████████████████████████████████████████████████████████████████▍                                                                                        | 12/28 [00:01<00:02,  5.96it/s]
+
+
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                      | 24/28 [00:03<00:00,  5.83it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 41%|█████████████████████████████████████████████████████████████▌                                                                                          | 830/2048 [13:05<12:22,  1.64it/s]
+ 41%|█████████████████████████████████████████████████████████████▊                                                                                          | 832/2048 [13:07<12:30,  1.62it/s]
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 49/52 [00:08<00:00,  5.90it/s]
+
+
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                      | 21/28 [00:03<00:01,  5.93it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 44%|██████████████████████████████████████████████████████████████████▎                                                                                     | 893/2048 [13:59<11:38,  1.65it/s]
+ 44%|██████████████████████████████████████████████████████████████████▌                                                                                     | 896/2048 [14:01<11:32,  1.66it/s]
+
+
+
+
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████      | 50/52 [00:08<00:00,  5.71it/s]
+
+
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                      | 21/28 [00:03<00:01,  5.78it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 47%|███████████████████████████████████████████████████████████████████████                                                                                 | 957/2048 [15:03<11:08,  1.63it/s]
+ 47%|███████████████████████████████████████████████████████████████████████▎                                                                                | 960/2048 [15:05<11:02,  1.64it/s]
+
+
+
+
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                  | 46/52 [00:08<00:01,  5.66it/s]
+
+
+
+ 61%|██████████████████████████████████████████████████████████████████████████████████████████████                                                             | 17/28 [00:02<00:01,  5.89it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 50%|███████████████████████████████████████████████████████████████████████████▎                                                                           | 1022/2048 [16:08<10:32,  1.62it/s]
+ 50%|███████████████████████████████████████████████████████████████████████████▌                                                                           | 1024/2048 [16:09<10:27,  1.63it/s]
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 49/52 [00:08<00:00,  5.78it/s]
+
+
+ 61%|██████████████████████████████████████████████████████████████████████████████████████████████                                                             | 17/28 [00:02<00:01,  5.87it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 53%|████████████████████████████████████████████████████████████████████████████████▏                                                                      | 1087/2048 [17:03<09:47,  1.64it/s]
+ 53%|████████████████████████████████████████████████████████████████████████████████▏                                                                      | 1088/2048 [17:04<09:46,  1.64it/s]
+
+
+
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                  | 46/52 [00:07<00:01,  5.34it/s]
+
+
+
+ 57%|████████████████████████████████████████████████████████████████████████████████████████▌                                                                  | 16/28 [00:02<00:02,  5.85it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 56%|████████████████████████████████████████████████████████████████████████████████████▊                                                                  | 1151/2048 [18:08<09:03,  1.65it/s]
+ 56%|████████████████████████████████████████████████████████████████████████████████████▉                                                                  | 1152/2048 [18:08<09:04,  1.65it/s]
+
+
+
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                    | 45/52 [00:07<00:01,  5.85it/s]
+
+
+
+ 57%|████████████████████████████████████████████████████████████████████████████████████████▌                                                                  | 16/28 [00:02<00:02,  5.85it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 59%|█████████████████████████████████████████████████████████████████████████████████████████▌                                                             | 1215/2048 [19:12<08:44,  1.59it/s]
+ 59%|█████████████████████████████████████████████████████████████████████████████████████████▋                                                             | 1216/2048 [19:13<08:48,  1.57it/s]
+
+
+
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                       | 44/52 [00:07<00:01,  5.86it/s]
+
+
+
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍     | 27/28 [00:04<00:00,  5.98it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 62%|██████████████████████████████████████████████████████████████████████████████████████████████▍                                                        | 1280/2048 [20:07<07:46,  1.64it/s]
+  0%|                                                                                                                                                                    | 0/52 [00:00<?, ?it/s]
+
+
+
+
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                  | 46/52 [00:08<00:01,  5.23it/s]
+
+
+
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉           | 26/28 [00:04<00:00,  5.86it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 66%|███████████████████████████████████████████████████████████████████████████████████████████████████                                                    | 1344/2048 [21:10<07:01,  1.67it/s]
+  4%|██████                                                                                                                                                      | 2/52 [00:00<00:05,  9.79it/s]
+
+
+
+
+ 92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 48/52 [00:08<00:00,  5.83it/s]
+
+
+
+ 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                 | 19/28 [00:03<00:01,  5.85it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 69%|███████████████████████████████████████████████████████████████████████████████████████████████████████▊                                               | 1408/2048 [22:14<08:14,  1.29it/s]
+  6%|█████████                                                                                                                                                   | 3/52 [00:00<00:07,  6.40it/s]
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 49/52 [00:08<00:00,  5.62it/s]
+
+
+
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                      | 21/28 [00:03<00:01,  5.86it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                          | 1472/2048 [23:09<05:52,  1.63it/s]
+  4%|██████                                                                                                                                                      | 2/52 [00:00<00:04, 11.70it/s]
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 49/52 [00:08<00:00,  5.34it/s]
+
+
+
+ 61%|██████████████████████████████████████████████████████████████████████████████████████████████                                                             | 17/28 [00:02<00:01,  5.85it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                     | 1536/2048 [24:13<05:10,  1.65it/s]
+  4%|██████                                                                                                                                                      | 2/52 [00:00<00:04, 10.12it/s]
+
+
+
+
+ 92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 48/52 [00:08<00:00,  5.81it/s]
+
+
+
+ 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                 | 19/28 [00:03<00:01,  5.82it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                 | 1599/2048 [25:07<04:35,  1.63it/s]
+ 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                 | 1600/2048 [25:18<27:40,  3.71s/it]
+
+
+
+
+ 18%|███████████████████████████▊                                                                                                                                | 5/28 [00:00<00:03,  6.59it/s]
+
+
+ 57%|████████████████████████████████████████████████████████████████████████████████████████▌                                                                  | 16/28 [00:02<00:02,  5.80it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                            | 1663/2048 [26:11<03:54,  1.64it/s]
+ 81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                            | 1664/2048 [26:12<03:53,  1.64it/s]
+
+
+
+
+ 18%|███████████████████████████▊                                                                                                                                | 5/28 [00:00<00:03,  7.01it/s]
+
+
+ 61%|██████████████████████████████████████████████████████████████████████████████████████████████                                                             | 17/28 [00:02<00:01,  5.99it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                       | 1728/2048 [27:16<03:14,  1.65it/s]
+  0%|                                                                                                                                                                    | 0/52 [00:00<?, ?it/s]
+
+
+
+
+
+ 14%|██████████████████████▎                                                                                                                                     | 4/28 [00:00<00:03,  7.39it/s]
+
+
+ 57%|████████████████████████████████████████████████████████████████████████████████████████▌                                                                  | 16/28 [00:02<00:02,  5.92it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                   | 1791/2048 [28:09<02:35,  1.65it/s]
+ 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 1792/2048 [28:10<02:35,  1.65it/s]
+
+
+
+
+ 18%|███████████████████████████▊                                                                                                                                | 5/28 [00:00<00:03,  6.52it/s]
+
+
+ 61%|██████████████████████████████████████████████████████████████████████████████████████████████                                                             | 17/28 [00:02<00:01,  6.01it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 1856/2048 [29:14<01:58,  1.62it/s]
+{'loss': 1.7074, 'learning_rate': 0.0001, 'total_grad_norm': 1.3392767035315598, 'epoch': 29.0}
+
+
+
+
+ 21%|█████████████████████████████████▍                                                                                                                          | 6/28 [00:00<00:03,  6.67it/s]
+
+
+ 64%|███████████████████████████████████████████████████████████████████████████████████████████████████▋                                                       | 18/28 [00:02<00:01,  5.90it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 94%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌         | 1920/2048 [30:18<01:18,  1.63it/s]
+{'loss': 1.41, 'learning_rate': 0.0001, 'total_grad_norm': 36.713690327478254, 'epoch': 30.0}
+
+
+
+
+  7%|███████████▏                                                                                                                                                | 2/28 [00:00<00:02, 12.17it/s]
+
+
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                      | 24/28 [00:03<00:00,  5.92it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏    | 1982/2048 [31:12<00:39,  1.66it/s]
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎    | 1984/2048 [31:13<00:38,  1.66it/s]
+
+
+
+
+  7%|███████████▏                                                                                                                                                | 2/28 [00:00<00:02, 12.60it/s]
+
+
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉           | 26/28 [00:04<00:00,  5.91it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 2047/2048 [32:16<00:00,  1.65it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2048/2048 [32:17<00:00,  1.65it/s]
+
+
+
+
+ 14%|██████████████████████▎                                                                                                                                     | 4/28 [00:00<00:03,  7.25it/s]
+
+
+ 57%|████████████████████████████████████████████████████████████████████████████████████████▌                                                                  | 16/28 [00:02<00:02,  5.81it/s]
+{'eval_rte_loss': 2.080078125, 'eval_rte_accuracy': 0.4729241877256318, 'eval_rte_runtime': 4.8677, 'eval_rte_samples_per_second': 56.906, 'eval_rte_steps_per_second': 5.752, 'epoch': 32.0}
+{'train_runtime': 1951.2921, 'train_samples_per_second': 1.05, 'train_steps_per_second': 1.05, 'train_loss': 1.2544889530399814, 'epoch': 32.0}
+***** train metrics *****
+  epoch                    =       32.0
+  train_loss               =     1.2545
+  train_runtime            = 0:32:31.29
+  train_samples            =         64
+  train_samples_per_second =       1.05
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2048/2048 [32:31<00:00,  1.05it/s]

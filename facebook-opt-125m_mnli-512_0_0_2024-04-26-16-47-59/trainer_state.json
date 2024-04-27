@@ -1,0 +1,69 @@
+{
+  "best_metric": null,
+  "best_model_checkpoint": null,
+  "epoch": 1.0,
+  "global_step": 128,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.01,
+      "learning_rate": 0,
+      "loss": 6.6602,
+      "step": 1,
+      "total_grad_norm": 0.0
+    },
+    {
+      "epoch": 1.0,
+      "learning_rate": 0.0005,
+      "loss": 1.3375,
+      "step": 128,
+      "total_grad_norm": 14.697913631654545
+    },
+    {
+      "epoch": 1.0,
+      "eval_hans-lexical_overlap-entailment_accuracy": 0.9202,
+      "eval_hans-lexical_overlap-entailment_frac_non_target_tokens": 0.0,
+      "eval_hans-lexical_overlap-entailment_loss": 0.2093505859375,
+      "eval_hans-lexical_overlap-entailment_runtime": 75.0034,
+      "eval_hans-lexical_overlap-entailment_samples_per_second": 66.664,
+      "eval_hans-lexical_overlap-entailment_steps_per_second": 6.666,
+      "step": 128
+    },
+    {
+      "epoch": 1.0,
+      "eval_hans-lexical_overlap-contradiction_accuracy": 0.0624,
+      "eval_hans-lexical_overlap-contradiction_frac_non_target_tokens": 0.0,
+      "eval_hans-lexical_overlap-contradiction_loss": 2.353515625,
+      "eval_hans-lexical_overlap-contradiction_runtime": 76.6162,
+      "eval_hans-lexical_overlap-contradiction_samples_per_second": 65.26,
+      "eval_hans-lexical_overlap-contradiction_steps_per_second": 6.526,
+      "step": 128
+    },
+    {
+      "epoch": 1.0,
+      "eval_mnli_accuracy": 0.6957561267184699,
+      "eval_mnli_frac_non_target_tokens": 0.0,
+      "eval_mnli_loss": 0.6181640625,
+      "eval_mnli_runtime": 99.9682,
+      "eval_mnli_samples_per_second": 66.941,
+      "eval_mnli_steps_per_second": 6.702,
+      "step": 128
+    },
+    {
+      "epoch": 1.0,
+      "step": 128,
+      "total_flos": 339350388736.0,
+      "train_loss": 1.379120111465454,
+      "train_runtime": 302.5661,
+      "train_samples_per_second": 1.692,
+      "train_steps_per_second": 0.423
+    }
+  ],
+  "max_steps": 128,
+  "num_train_epochs": 1,
+  "total_flos": 339350388736.0,
+  "trial_name": null,
+  "trial_params": null
+}

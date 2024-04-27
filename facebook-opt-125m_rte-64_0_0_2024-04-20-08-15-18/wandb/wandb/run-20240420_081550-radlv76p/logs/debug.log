@@ -1,0 +1,30 @@
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Configure stats pid to 29272
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Loading settings from /home/kwanhao_chan/.config/wandb/settings
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Loading settings from /llmft/wandb/settings
+2024-04-20 08:15:50,927 WARNING MainThread:29272 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_CACHE_DIR
+2024-04-20 08:15:50,927 WARNING MainThread:29272 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_CONFIG_DIR
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'disabled': 'false', 'username': 'kchan303', 'api_key': '***REDACTED***', 'entity': 'cs7643-deep-learning-org'}
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'ft.py', 'program_abspath': '/llmft/ft.py', 'program': '/llmft/ft.py'}
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_init.py:_log_setup():527] Logging user logs to /logfiles/facebook-opt-125m_rte-64_0_0_2024-04-20-08-15-18/wandb/wandb/run-20240420_081550-radlv76p/logs/debug.log
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_init.py:_log_setup():528] Logging internal logs to /logfiles/facebook-opt-125m_rte-64_0_0_2024-04-20-08-15-18/wandb/wandb/run-20240420_081550-radlv76p/logs/debug-internal.log
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_init.py:init():567] calling init triggers
+2024-04-20 08:15:50,927 INFO    MainThread:29272 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {}
+2024-04-20 08:15:50,928 INFO    MainThread:29272 [wandb_init.py:init():617] starting backend
+2024-04-20 08:15:50,928 INFO    MainThread:29272 [wandb_init.py:init():621] setting up manager
+2024-04-20 08:15:50,934 INFO    MainThread:29272 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-20 08:15:50,937 INFO    MainThread:29272 [wandb_init.py:init():629] backend started and connected
+2024-04-20 08:15:50,950 INFO    MainThread:29272 [wandb_init.py:init():721] updated telemetry
+2024-04-20 08:15:51,000 INFO    MainThread:29272 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-04-20 08:15:51,499 ERROR   MainThread:29272 [wandb_init.py:init():780] encountered error: you may not log runs directly to your organization, please try using your team entity (Error 400: Bad Request)
+2024-04-20 08:15:51,607 ERROR   MainThread:29272 [wandb_init.py:init():1205] you may not log runs directly to your organization, please try using your team entity (Error 400: Bad Request)
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1187, in init
+    run = wi.init()
+  File "/opt/conda/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 786, in init
+    raise error
+wandb.errors.CommError: you may not log runs directly to your organization, please try using your team entity (Error 400: Bad Request)
+2024-04-20 08:15:52,611 WARNING MsgRouterThr:29272 [router.py:message_loop():77] message_loop has been closed

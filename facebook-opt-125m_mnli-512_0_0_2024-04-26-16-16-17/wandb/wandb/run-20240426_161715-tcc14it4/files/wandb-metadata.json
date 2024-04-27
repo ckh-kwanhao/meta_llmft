@@ -1,0 +1,126 @@
+{
+    "os": "Linux-5.10.0-28-cloud-amd64-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-04-26T16:17:15.851656",
+    "startedAt": "2024-04-26T16:17:15.070058",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=0",
+        "--wandb_project_name",
+        "llmft-experiments",
+        "--wandb_group_name",
+        "pattern-verbalizer-ft-lora",
+        "--model_name_or_path",
+        "facebook/opt-125m",
+        "--cache_dir",
+        "/cache/hf_lms",
+        "--task_name",
+        "mnli",
+        "--pattern",
+        "{text1} {text2} ?",
+        "--target_tokens",
+        "\u0120Yes,\u0120No",
+        "--dataset_cache_dir",
+        "/cache/hf_datasets",
+        "--max_seq_length",
+        "256",
+        "--output_dir",
+        "/logfiles",
+        "--overwrite_output_dir",
+        "--do_train",
+        "--use_adapter",
+        "--adapter_type",
+        "lora",
+        "--adapter_dim",
+        "8",
+        "--lora_alpha",
+        "-1",
+        "--max_train_samples",
+        "512",
+        "--per_device_train_batch_size",
+        "4",
+        "--gradient_accumulation_steps",
+        "1",
+        "--num_train_epochs",
+        "1",
+        "--warmup_ratio",
+        "0.2",
+        "--logging_first_step",
+        "true",
+        "--logging_steps",
+        "128",
+        "--learning_rate",
+        "5e-4",
+        "--weight_decay",
+        "0.0",
+        "--do_eval",
+        "--evaluation_strategy",
+        "epoch",
+        "--per_device_eval_batch_size",
+        "10",
+        "--eval_on_hans",
+        "--save_strategy",
+        "no",
+        "--fp16",
+        "--seed",
+        "0",
+        "--data_seed",
+        "0",
+        "--deepspeed",
+        "/llmft/deepspeed_configs/ds_config_zero3.json",
+        "--deepspeed_stage",
+        "3",
+        "--report_to",
+        "none"
+    ],
+    "state": "running",
+    "program": "/llmft/ft_20240426.py",
+    "codePathLocal": "ft_20240426.py",
+    "codePath": "ft_20240426.py",
+    "git": {
+        "remote": "https://github.com/uds-lsv/llmft.git",
+        "commit": "3acc3894fa4111d9155190a98a147e3e664ff3da"
+    },
+    "email": null,
+    "root": "/llmft",
+    "host": "0392d6c484c9",
+    "username": "kchan303",
+    "executable": "/opt/conda/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2199.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 98.18611526489258,
+            "used": 66.0446662902832
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 12.680400848388672
+    }
+}

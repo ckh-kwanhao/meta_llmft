@@ -1,0 +1,501 @@
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight', 'model.decoder.final_layer_norm.weight', 'model.decoder.final_layer_norm.bias', 'model.decoder.layers.0.self_attn.k_proj.weight', 'model.decoder.layers.0.self_attn.k_proj.bias', 'model.decoder.layers.0.self_attn.v_proj.weight', 'model.decoder.layers.0.self_attn.v_proj.bias', 'model.decoder.layers.0.self_attn.q_proj.weight', 'model.decoder.layers.0.self_attn.q_proj.bias', 'model.decoder.layers.0.self_attn.out_proj.weight', 'model.decoder.layers.0.self_attn.out_proj.bias', 'model.decoder.layers.0.self_attn_layer_norm.weight', 'model.decoder.layers.0.self_attn_layer_norm.bias', 'model.decoder.layers.0.fc1.weight', 'model.decoder.layers.0.fc1.bias', 'model.decoder.layers.0.fc2.weight', 'model.decoder.layers.0.fc2.bias', 'model.decoder.layers.0.final_layer_norm.weight', 'model.decoder.layers.0.final_layer_norm.bias', 'model.decoder.layers.1.self_attn.k_proj.weight', 'model.decoder.layers.1.self_attn.k_proj.bias', 'model.decoder.layers.1.self_attn.v_proj.weight', 'model.decoder.layers.1.self_attn.v_proj.bias', 'model.decoder.layers.1.self_attn.q_proj.weight', 'model.decoder.layers.1.self_attn.q_proj.bias', 'model.decoder.layers.1.self_attn.out_proj.weight', 'model.decoder.layers.1.self_attn.out_proj.bias', 'model.decoder.layers.1.self_attn_layer_norm.weight', 'model.decoder.layers.1.self_attn_layer_norm.bias', 'model.decoder.layers.1.fc1.weight', 'model.decoder.layers.1.fc1.bias', 'model.decoder.layers.1.fc2.weight', 'model.decoder.layers.1.fc2.bias', 'model.decoder.layers.1.final_layer_norm.weight', 'model.decoder.layers.1.final_layer_norm.bias', 'model.decoder.layers.2.self_attn.k_proj.weight', 'model.decoder.layers.2.self_attn.k_proj.bias', 'model.decoder.layers.2.self_attn.v_proj.weight', 'model.decoder.layers.2.self_attn.v_proj.bias', 'model.decoder.layers.2.self_attn.q_proj.weight', 'model.decoder.layers.2.self_attn.q_proj.bias', 'model.decoder.layers.2.self_attn.out_proj.weight', 'model.decoder.layers.2.self_attn.out_proj.bias', 'model.decoder.layers.2.self_attn_layer_norm.weight', 'model.decoder.layers.2.self_attn_layer_norm.bias', 'model.decoder.layers.2.fc1.weight', 'model.decoder.layers.2.fc1.bias', 'model.decoder.layers.2.fc2.weight', 'model.decoder.layers.2.fc2.bias', 'model.decoder.layers.2.final_layer_norm.weight', 'model.decoder.layers.2.final_layer_norm.bias', 'model.decoder.layers.3.self_attn.k_proj.weight', 'model.decoder.layers.3.self_attn.k_proj.bias', 'model.decoder.layers.3.self_attn.v_proj.weight', 'model.decoder.layers.3.self_attn.v_proj.bias', 'model.decoder.layers.3.self_attn.q_proj.weight', 'model.decoder.layers.3.self_attn.q_proj.bias', 'model.decoder.layers.3.self_attn.out_proj.weight', 'model.decoder.layers.3.self_attn.out_proj.bias', 'model.decoder.layers.3.self_attn_layer_norm.weight', 'model.decoder.layers.3.self_attn_layer_norm.bias', 'model.decoder.layers.3.fc1.weight', 'model.decoder.layers.3.fc1.bias', 'model.decoder.layers.3.fc2.weight', 'model.decoder.layers.3.fc2.bias', 'model.decoder.layers.3.final_layer_norm.weight', 'model.decoder.layers.3.final_layer_norm.bias', 'model.decoder.layers.4.self_attn.k_proj.weight', 'model.decoder.layers.4.self_attn.k_proj.bias', 'model.decoder.layers.4.self_attn.v_proj.weight', 'model.decoder.layers.4.self_attn.v_proj.bias', 'model.decoder.layers.4.self_attn.q_proj.weight', 'model.decoder.layers.4.self_attn.q_proj.bias', 'model.decoder.layers.4.self_attn.out_proj.weight', 'model.decoder.layers.4.self_attn.out_proj.bias', 'model.decoder.layers.4.self_attn_layer_norm.weight', 'model.decoder.layers.4.self_attn_layer_norm.bias', 'model.decoder.layers.4.fc1.weight', 'model.decoder.layers.4.fc1.bias', 'model.decoder.layers.4.fc2.weight', 'model.decoder.layers.4.fc2.bias', 'model.decoder.layers.4.final_layer_norm.weight', 'model.decoder.layers.4.final_layer_norm.bias', 'model.decoder.layers.5.self_attn.k_proj.weight', 'model.decoder.layers.5.self_attn.k_proj.bias', 'model.decoder.layers.5.self_attn.v_proj.weight', 'model.decoder.layers.5.self_attn.v_proj.bias', 'model.decoder.layers.5.self_attn.q_proj.weight', 'model.decoder.layers.5.self_attn.q_proj.bias', 'model.decoder.layers.5.self_attn.out_proj.weight', 'model.decoder.layers.5.self_attn.out_proj.bias', 'model.decoder.layers.5.self_attn_layer_norm.weight', 'model.decoder.layers.5.self_attn_layer_norm.bias', 'model.decoder.layers.5.fc1.weight', 'model.decoder.layers.5.fc1.bias', 'model.decoder.layers.5.fc2.weight', 'model.decoder.layers.5.fc2.bias', 'model.decoder.layers.5.final_layer_norm.weight', 'model.decoder.layers.5.final_layer_norm.bias', 'model.decoder.layers.6.self_attn.k_proj.weight', 'model.decoder.layers.6.self_attn.k_proj.bias', 'model.decoder.layers.6.self_attn.v_proj.weight', 'model.decoder.layers.6.self_attn.v_proj.bias', 'model.decoder.layers.6.self_attn.q_proj.weight', 'model.decoder.layers.6.self_attn.q_proj.bias', 'model.decoder.layers.6.self_attn.out_proj.weight', 'model.decoder.layers.6.self_attn.out_proj.bias', 'model.decoder.layers.6.self_attn_layer_norm.weight', 'model.decoder.layers.6.self_attn_layer_norm.bias', 'model.decoder.layers.6.fc1.weight', 'model.decoder.layers.6.fc1.bias', 'model.decoder.layers.6.fc2.weight', 'model.decoder.layers.6.fc2.bias', 'model.decoder.layers.6.final_layer_norm.weight', 'model.decoder.layers.6.final_layer_norm.bias', 'model.decoder.layers.7.self_attn.k_proj.weight', 'model.decoder.layers.7.self_attn.k_proj.bias', 'model.decoder.layers.7.self_attn.v_proj.weight', 'model.decoder.layers.7.self_attn.v_proj.bias', 'model.decoder.layers.7.self_attn.q_proj.weight', 'model.decoder.layers.7.self_attn.q_proj.bias', 'model.decoder.layers.7.self_attn.out_proj.weight', 'model.decoder.layers.7.self_attn.out_proj.bias', 'model.decoder.layers.7.self_attn_layer_norm.weight', 'model.decoder.layers.7.self_attn_layer_norm.bias', 'model.decoder.layers.7.fc1.weight', 'model.decoder.layers.7.fc1.bias', 'model.decoder.layers.7.fc2.weight', 'model.decoder.layers.7.fc2.bias', 'model.decoder.layers.7.final_layer_norm.weight', 'model.decoder.layers.7.final_layer_norm.bias', 'model.decoder.layers.8.self_attn.k_proj.weight', 'model.decoder.layers.8.self_attn.k_proj.bias', 'model.decoder.layers.8.self_attn.v_proj.weight', 'model.decoder.layers.8.self_attn.v_proj.bias', 'model.decoder.layers.8.self_attn.q_proj.weight', 'model.decoder.layers.8.self_attn.q_proj.bias', 'model.decoder.layers.8.self_attn.out_proj.weight', 'model.decoder.layers.8.self_attn.out_proj.bias', 'model.decoder.layers.8.self_attn_layer_norm.weight', 'model.decoder.layers.8.self_attn_layer_norm.bias', 'model.decoder.layers.8.fc1.weight', 'model.decoder.layers.8.fc1.bias', 'model.decoder.layers.8.fc2.weight', 'model.decoder.layers.8.fc2.bias', 'model.decoder.layers.8.final_layer_norm.weight', 'model.decoder.layers.8.final_layer_norm.bias', 'model.decoder.layers.9.self_attn.k_proj.weight', 'model.decoder.layers.9.self_attn.k_proj.bias', 'model.decoder.layers.9.self_attn.v_proj.weight', 'model.decoder.layers.9.self_attn.v_proj.bias', 'model.decoder.layers.9.self_attn.q_proj.weight', 'model.decoder.layers.9.self_attn.q_proj.bias', 'model.decoder.layers.9.self_attn.out_proj.weight', 'model.decoder.layers.9.self_attn.out_proj.bias', 'model.decoder.layers.9.self_attn_layer_norm.weight', 'model.decoder.layers.9.self_attn_layer_norm.bias', 'model.decoder.layers.9.fc1.weight', 'model.decoder.layers.9.fc1.bias', 'model.decoder.layers.9.fc2.weight', 'model.decoder.layers.9.fc2.bias', 'model.decoder.layers.9.final_layer_norm.weight', 'model.decoder.layers.9.final_layer_norm.bias', 'model.decoder.layers.10.self_attn.k_proj.weight', 'model.decoder.layers.10.self_attn.k_proj.bias', 'model.decoder.layers.10.self_attn.v_proj.weight', 'model.decoder.layers.10.self_attn.v_proj.bias', 'model.decoder.layers.10.self_attn.q_proj.weight', 'model.decoder.layers.10.self_attn.q_proj.bias', 'model.decoder.layers.10.self_attn.out_proj.weight', 'model.decoder.layers.10.self_attn.out_proj.bias', 'model.decoder.layers.10.self_attn_layer_norm.weight', 'model.decoder.layers.10.self_attn_layer_norm.bias', 'model.decoder.layers.10.fc1.weight', 'model.decoder.layers.10.fc1.bias', 'model.decoder.layers.10.fc2.weight', 'model.decoder.layers.10.fc2.bias', 'model.decoder.layers.10.final_layer_norm.weight', 'model.decoder.layers.10.final_layer_norm.bias', 'model.decoder.layers.11.self_attn.k_proj.weight', 'model.decoder.layers.11.self_attn.k_proj.bias', 'model.decoder.layers.11.self_attn.v_proj.weight', 'model.decoder.layers.11.self_attn.v_proj.bias', 'model.decoder.layers.11.self_attn.q_proj.weight', 'model.decoder.layers.11.self_attn.q_proj.bias', 'model.decoder.layers.11.self_attn.out_proj.weight', 'model.decoder.layers.11.self_attn.out_proj.bias', 'model.decoder.layers.11.self_attn_layer_norm.weight', 'model.decoder.layers.11.self_attn_layer_norm.bias', 'model.decoder.layers.11.fc1.weight', 'model.decoder.layers.11.fc1.bias', 'model.decoder.layers.11.fc2.weight', 'model.decoder.layers.11.fc2.bias', 'model.decoder.layers.11.final_layer_norm.weight', 'model.decoder.layers.11.final_layer_norm.bias']
+checkpoint None
+do_train:  True
+do_eval:  True
+do_predict:  False
+resume_from_checkpoint:  None
+output_dir:  /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-17-13-15
+Using /cache/torch as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /cache/torch/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.16332364082336426 seconds
+Using /cache/torch as PyTorch extensions root...
+Emitting ninja build file /cache/torch/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module utils...
+Time to load utils op: 0.16792559623718262 seconds
+Parameter Offload: Total persistent parameters: 121344 in 122 params
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0023059844970703125 seconds
+  0%|▏                                                                               | 1/512 [00:00<07:31,  1.13it/s][WARNING|trainer_pt_utils.py:849] 2024-04-26 17:15:29,214 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  0%|▏                                                                               | 1/512 [00:00<07:31,  1.13it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████▊| 511/512 [02:44<00:00,  3.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████| 512/512 [02:48<00:00,  1.58s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████| 500/500 [00:50<00:00, 10.34it/s]
+{'eval_hans-lexical_overlap-entailment_loss': 4.828125, 'eval_hans-lexical_overlap-entailment_accuracy': 0.0, 'eval_hans-lexical_overlap-entailment_frac_non_target_tokens': 0.0, 'eval_hans-lexical_overlap-entailment_runtime': 52.3738, 'eval_hans-lexical_overlap-entailment_samples_per_second': 95.468, 'eval_hans-lexical_overlap-entailment_steps_per_second': 9.547, 'epoch': 1.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 18%|█████████████▊                                                                | 119/670 [00:11<00:54, 10.19it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████| 670/670 [01:09<00:00,  9.31it/s]
+{'eval_mnli_loss': 2.552734375, 'eval_mnli_accuracy': 0.4801255230125523, 'eval_mnli_frac_non_target_tokens': 0.0, 'eval_mnli_runtime': 73.2338, 'eval_mnli_samples_per_second': 91.379, 'eval_mnli_steps_per_second': 9.149, 'epoch': 1.0}
+{'train_runtime': 349.0297, 'train_samples_per_second': 1.467, 'train_steps_per_second': 1.467, 'train_loss': 2.1185989379882812, 'epoch': 1.0}
+
+Saving model
+Saving tokenizer
+Reloading model
+ reloaded config: OPTConfig {
+  "_name_or_path": "facebook/opt-125m",
+  "_remove_final_layer_norm": false,
+  "activation_dropout": 0.0,
+  "activation_function": "relu",
+  "architectures": [
+    "OPTForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 2,
+  "do_layer_norm_before": true,
+  "dropout": 0.1,
+  "enable_bias": true,
+  "eos_token_id": 2,
+  "ffn_dim": 3072,
+  "finetuning_task": "mnli",
+  "hidden_size": 768,
+  "init_std": 0.02,
+  "layer_norm_elementwise_affine": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 2048,
+  "model_type": "opt",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "prefix": "</s>",
+  "torch_dtype": "float16",
+  "transformers_version": "4.28.0",
+  "use_cache": true,
+  "vocab_size": 50272,
+  "word_embed_proj_dim": 768
+}
+ reloaded config: OPTConfig {
+  "_name_or_path": "facebook/opt-125m",
+  "_remove_final_layer_norm": false,
+  "activation_dropout": 0.0,
+  "activation_function": "relu",
+  "adapter_type": null,
+  "architectures": [
+    "OPTForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 2,
+  "do_layer_norm_before": true,
+  "dropout": 0.1,
+  "enable_bias": true,
+  "eos_token_id": 2,
+  "ffn_dim": 3072,
+  "finetuning_task": "mnli",
+  "hidden_size": 768,
+  "init_std": 0.02,
+  "layer_norm_elementwise_affine": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 2048,
+  "model_type": "opt",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "prefix": "</s>",
+  "torch_dtype": "float16",
+  "transformers_version": "4.28.0",
+  "untie_embeddings": false,
+  "use_adapters": false,
+  "use_cache": true,
+  "vocab_size": 50272,
+  "word_embed_proj_dim": 768
+}
+Loaded config.
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Loaded saved model.
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight', 'model.decoder.final_layer_norm.weight', 'model.decoder.final_layer_norm.bias', 'model.decoder.layers.0.self_attn.k_proj.weight', 'model.decoder.layers.0.self_attn.k_proj.bias', 'model.decoder.layers.0.self_attn.v_proj.weight', 'model.decoder.layers.0.self_attn.v_proj.bias', 'model.decoder.layers.0.self_attn.q_proj.weight', 'model.decoder.layers.0.self_attn.q_proj.bias', 'model.decoder.layers.0.self_attn.out_proj.weight', 'model.decoder.layers.0.self_attn.out_proj.bias', 'model.decoder.layers.0.self_attn_layer_norm.weight', 'model.decoder.layers.0.self_attn_layer_norm.bias', 'model.decoder.layers.0.fc1.weight', 'model.decoder.layers.0.fc1.bias', 'model.decoder.layers.0.fc2.weight', 'model.decoder.layers.0.fc2.bias', 'model.decoder.layers.0.final_layer_norm.weight', 'model.decoder.layers.0.final_layer_norm.bias', 'model.decoder.layers.1.self_attn.k_proj.weight', 'model.decoder.layers.1.self_attn.k_proj.bias', 'model.decoder.layers.1.self_attn.v_proj.weight', 'model.decoder.layers.1.self_attn.v_proj.bias', 'model.decoder.layers.1.self_attn.q_proj.weight', 'model.decoder.layers.1.self_attn.q_proj.bias', 'model.decoder.layers.1.self_attn.out_proj.weight', 'model.decoder.layers.1.self_attn.out_proj.bias', 'model.decoder.layers.1.self_attn_layer_norm.weight', 'model.decoder.layers.1.self_attn_layer_norm.bias', 'model.decoder.layers.1.fc1.weight', 'model.decoder.layers.1.fc1.bias', 'model.decoder.layers.1.fc2.weight', 'model.decoder.layers.1.fc2.bias', 'model.decoder.layers.1.final_layer_norm.weight', 'model.decoder.layers.1.final_layer_norm.bias', 'model.decoder.layers.2.self_attn.k_proj.weight', 'model.decoder.layers.2.self_attn.k_proj.bias', 'model.decoder.layers.2.self_attn.v_proj.weight', 'model.decoder.layers.2.self_attn.v_proj.bias', 'model.decoder.layers.2.self_attn.q_proj.weight', 'model.decoder.layers.2.self_attn.q_proj.bias', 'model.decoder.layers.2.self_attn.out_proj.weight', 'model.decoder.layers.2.self_attn.out_proj.bias', 'model.decoder.layers.2.self_attn_layer_norm.weight', 'model.decoder.layers.2.self_attn_layer_norm.bias', 'model.decoder.layers.2.fc1.weight', 'model.decoder.layers.2.fc1.bias', 'model.decoder.layers.2.fc2.weight', 'model.decoder.layers.2.fc2.bias', 'model.decoder.layers.2.final_layer_norm.weight', 'model.decoder.layers.2.final_layer_norm.bias', 'model.decoder.layers.3.self_attn.k_proj.weight', 'model.decoder.layers.3.self_attn.k_proj.bias', 'model.decoder.layers.3.self_attn.v_proj.weight', 'model.decoder.layers.3.self_attn.v_proj.bias', 'model.decoder.layers.3.self_attn.q_proj.weight', 'model.decoder.layers.3.self_attn.q_proj.bias', 'model.decoder.layers.3.self_attn.out_proj.weight', 'model.decoder.layers.3.self_attn.out_proj.bias', 'model.decoder.layers.3.self_attn_layer_norm.weight', 'model.decoder.layers.3.self_attn_layer_norm.bias', 'model.decoder.layers.3.fc1.weight', 'model.decoder.layers.3.fc1.bias', 'model.decoder.layers.3.fc2.weight', 'model.decoder.layers.3.fc2.bias', 'model.decoder.layers.3.final_layer_norm.weight', 'model.decoder.layers.3.final_layer_norm.bias', 'model.decoder.layers.4.self_attn.k_proj.weight', 'model.decoder.layers.4.self_attn.k_proj.bias', 'model.decoder.layers.4.self_attn.v_proj.weight', 'model.decoder.layers.4.self_attn.v_proj.bias', 'model.decoder.layers.4.self_attn.q_proj.weight', 'model.decoder.layers.4.self_attn.q_proj.bias', 'model.decoder.layers.4.self_attn.out_proj.weight', 'model.decoder.layers.4.self_attn.out_proj.bias', 'model.decoder.layers.4.self_attn_layer_norm.weight', 'model.decoder.layers.4.self_attn_layer_norm.bias', 'model.decoder.layers.4.fc1.weight', 'model.decoder.layers.4.fc1.bias', 'model.decoder.layers.4.fc2.weight', 'model.decoder.layers.4.fc2.bias', 'model.decoder.layers.4.final_layer_norm.weight', 'model.decoder.layers.4.final_layer_norm.bias', 'model.decoder.layers.5.self_attn.k_proj.weight', 'model.decoder.layers.5.self_attn.k_proj.bias', 'model.decoder.layers.5.self_attn.v_proj.weight', 'model.decoder.layers.5.self_attn.v_proj.bias', 'model.decoder.layers.5.self_attn.q_proj.weight', 'model.decoder.layers.5.self_attn.q_proj.bias', 'model.decoder.layers.5.self_attn.out_proj.weight', 'model.decoder.layers.5.self_attn.out_proj.bias', 'model.decoder.layers.5.self_attn_layer_norm.weight', 'model.decoder.layers.5.self_attn_layer_norm.bias', 'model.decoder.layers.5.fc1.weight', 'model.decoder.layers.5.fc1.bias', 'model.decoder.layers.5.fc2.weight', 'model.decoder.layers.5.fc2.bias', 'model.decoder.layers.5.final_layer_norm.weight', 'model.decoder.layers.5.final_layer_norm.bias', 'model.decoder.layers.6.self_attn.k_proj.weight', 'model.decoder.layers.6.self_attn.k_proj.bias', 'model.decoder.layers.6.self_attn.v_proj.weight', 'model.decoder.layers.6.self_attn.v_proj.bias', 'model.decoder.layers.6.self_attn.q_proj.weight', 'model.decoder.layers.6.self_attn.q_proj.bias', 'model.decoder.layers.6.self_attn.out_proj.weight', 'model.decoder.layers.6.self_attn.out_proj.bias', 'model.decoder.layers.6.self_attn_layer_norm.weight', 'model.decoder.layers.6.self_attn_layer_norm.bias', 'model.decoder.layers.6.fc1.weight', 'model.decoder.layers.6.fc1.bias', 'model.decoder.layers.6.fc2.weight', 'model.decoder.layers.6.fc2.bias', 'model.decoder.layers.6.final_layer_norm.weight', 'model.decoder.layers.6.final_layer_norm.bias', 'model.decoder.layers.7.self_attn.k_proj.weight', 'model.decoder.layers.7.self_attn.k_proj.bias', 'model.decoder.layers.7.self_attn.v_proj.weight', 'model.decoder.layers.7.self_attn.v_proj.bias', 'model.decoder.layers.7.self_attn.q_proj.weight', 'model.decoder.layers.7.self_attn.q_proj.bias', 'model.decoder.layers.7.self_attn.out_proj.weight', 'model.decoder.layers.7.self_attn.out_proj.bias', 'model.decoder.layers.7.self_attn_layer_norm.weight', 'model.decoder.layers.7.self_attn_layer_norm.bias', 'model.decoder.layers.7.fc1.weight', 'model.decoder.layers.7.fc1.bias', 'model.decoder.layers.7.fc2.weight', 'model.decoder.layers.7.fc2.bias', 'model.decoder.layers.7.final_layer_norm.weight', 'model.decoder.layers.7.final_layer_norm.bias', 'model.decoder.layers.8.self_attn.k_proj.weight', 'model.decoder.layers.8.self_attn.k_proj.bias', 'model.decoder.layers.8.self_attn.v_proj.weight', 'model.decoder.layers.8.self_attn.v_proj.bias', 'model.decoder.layers.8.self_attn.q_proj.weight', 'model.decoder.layers.8.self_attn.q_proj.bias', 'model.decoder.layers.8.self_attn.out_proj.weight', 'model.decoder.layers.8.self_attn.out_proj.bias', 'model.decoder.layers.8.self_attn_layer_norm.weight', 'model.decoder.layers.8.self_attn_layer_norm.bias', 'model.decoder.layers.8.fc1.weight', 'model.decoder.layers.8.fc1.bias', 'model.decoder.layers.8.fc2.weight', 'model.decoder.layers.8.fc2.bias', 'model.decoder.layers.8.final_layer_norm.weight', 'model.decoder.layers.8.final_layer_norm.bias', 'model.decoder.layers.9.self_attn.k_proj.weight', 'model.decoder.layers.9.self_attn.k_proj.bias', 'model.decoder.layers.9.self_attn.v_proj.weight', 'model.decoder.layers.9.self_attn.v_proj.bias', 'model.decoder.layers.9.self_attn.q_proj.weight', 'model.decoder.layers.9.self_attn.q_proj.bias', 'model.decoder.layers.9.self_attn.out_proj.weight', 'model.decoder.layers.9.self_attn.out_proj.bias', 'model.decoder.layers.9.self_attn_layer_norm.weight', 'model.decoder.layers.9.self_attn_layer_norm.bias', 'model.decoder.layers.9.fc1.weight', 'model.decoder.layers.9.fc1.bias', 'model.decoder.layers.9.fc2.weight', 'model.decoder.layers.9.fc2.bias', 'model.decoder.layers.9.final_layer_norm.weight', 'model.decoder.layers.9.final_layer_norm.bias', 'model.decoder.layers.10.self_attn.k_proj.weight', 'model.decoder.layers.10.self_attn.k_proj.bias', 'model.decoder.layers.10.self_attn.v_proj.weight', 'model.decoder.layers.10.self_attn.v_proj.bias', 'model.decoder.layers.10.self_attn.q_proj.weight', 'model.decoder.layers.10.self_attn.q_proj.bias', 'model.decoder.layers.10.self_attn.out_proj.weight', 'model.decoder.layers.10.self_attn.out_proj.bias', 'model.decoder.layers.10.self_attn_layer_norm.weight', 'model.decoder.layers.10.self_attn_layer_norm.bias', 'model.decoder.layers.10.fc1.weight', 'model.decoder.layers.10.fc1.bias', 'model.decoder.layers.10.fc2.weight', 'model.decoder.layers.10.fc2.bias', 'model.decoder.layers.10.final_layer_norm.weight', 'model.decoder.layers.10.final_layer_norm.bias', 'model.decoder.layers.11.self_attn.k_proj.weight', 'model.decoder.layers.11.self_attn.k_proj.bias', 'model.decoder.layers.11.self_attn.v_proj.weight', 'model.decoder.layers.11.self_attn.v_proj.bias', 'model.decoder.layers.11.self_attn.q_proj.weight', 'model.decoder.layers.11.self_attn.q_proj.bias', 'model.decoder.layers.11.self_attn.out_proj.weight', 'model.decoder.layers.11.self_attn.out_proj.bias', 'model.decoder.layers.11.self_attn_layer_norm.weight', 'model.decoder.layers.11.self_attn_layer_norm.bias', 'model.decoder.layers.11.fc1.weight', 'model.decoder.layers.11.fc1.bias', 'model.decoder.layers.11.fc2.weight', 'model.decoder.layers.11.fc2.bias', 'model.decoder.layers.11.final_layer_norm.weight', 'model.decoder.layers.11.final_layer_norm.bias']
+Loaded saved model into trainer.
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.005506038665771484 seconds
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0032508373260498047 seconds
+Parameter Offload: Total persistent parameters: 121344 in 122 params
+  0%|▏                                                                               | 1/512 [00:00<03:33,  2.39it/s][WARNING|trainer_pt_utils.py:849] 2024-04-26 17:21:22,648 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  0%|▏                                                                               | 1/512 [00:00<03:33,  2.39it/s]
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.002870798110961914 seconds
+
+  1%|█                                                                               | 7/512 [00:02<02:49,  2.99it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████▊| 511/512 [02:44<00:00,  3.09it/s]
+100%|██████████████████████████████████████████████████████████████████████████████| 512/512 [02:49<00:00,  1.54s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████| 500/500 [00:49<00:00,  7.84it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████| 500/500 [00:49<00:00,  9.61it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████▉| 669/670 [01:09<00:00,  9.03it/s]
+{'eval_mnli_loss': 2.328125, 'eval_mnli_accuracy': 0.4801255230125523, 'eval_mnli_frac_non_target_tokens': 0.0, 'eval_mnli_runtime': 72.553, 'eval_mnli_samples_per_second': 92.236, 'eval_mnli_steps_per_second': 9.235, 'epoch': 1.0}
+{'train_runtime': 348.2759, 'train_samples_per_second': 1.47, 'train_steps_per_second': 1.47, 'train_loss': 1.6338512599468231, 'epoch': 1.0}
+***** train metrics *****
+  epoch                    =        1.0
+  train_loss               =     1.6339
+  train_runtime            = 0:05:48.27
+  train_samples            =        512
+  train_samples_per_second =       1.47
+
+  train_steps_per_second   =       1.47

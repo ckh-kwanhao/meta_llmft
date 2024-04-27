@@ -1,0 +1,334 @@
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight', 'model.decoder.final_layer_norm.bias', 'model.decoder.layers.0.self_attn.k_proj.bias', 'model.decoder.layers.0.self_attn.v_proj.bias', 'model.decoder.layers.0.self_attn.q_proj.bias', 'model.decoder.layers.0.self_attn.out_proj.bias', 'model.decoder.layers.0.self_attn_layer_norm.bias', 'model.decoder.layers.0.fc1.bias', 'model.decoder.layers.0.fc2.bias', 'model.decoder.layers.0.final_layer_norm.bias', 'model.decoder.layers.1.self_attn.k_proj.bias', 'model.decoder.layers.1.self_attn.v_proj.bias', 'model.decoder.layers.1.self_attn.q_proj.bias', 'model.decoder.layers.1.self_attn.out_proj.bias', 'model.decoder.layers.1.self_attn_layer_norm.bias', 'model.decoder.layers.1.fc1.bias', 'model.decoder.layers.1.fc2.bias', 'model.decoder.layers.1.final_layer_norm.bias', 'model.decoder.layers.2.self_attn.k_proj.bias', 'model.decoder.layers.2.self_attn.v_proj.bias', 'model.decoder.layers.2.self_attn.q_proj.bias', 'model.decoder.layers.2.self_attn.out_proj.bias', 'model.decoder.layers.2.self_attn_layer_norm.bias', 'model.decoder.layers.2.fc1.bias', 'model.decoder.layers.2.fc2.bias', 'model.decoder.layers.2.final_layer_norm.bias', 'model.decoder.layers.3.self_attn.k_proj.bias', 'model.decoder.layers.3.self_attn.v_proj.bias', 'model.decoder.layers.3.self_attn.q_proj.bias', 'model.decoder.layers.3.self_attn.out_proj.bias', 'model.decoder.layers.3.self_attn_layer_norm.bias', 'model.decoder.layers.3.fc1.bias', 'model.decoder.layers.3.fc2.bias', 'model.decoder.layers.3.final_layer_norm.bias', 'model.decoder.layers.4.self_attn.k_proj.bias', 'model.decoder.layers.4.self_attn.v_proj.bias', 'model.decoder.layers.4.self_attn.q_proj.bias', 'model.decoder.layers.4.self_attn.out_proj.bias', 'model.decoder.layers.4.self_attn_layer_norm.bias', 'model.decoder.layers.4.fc1.bias', 'model.decoder.layers.4.fc2.bias', 'model.decoder.layers.4.final_layer_norm.bias', 'model.decoder.layers.5.self_attn.k_proj.bias', 'model.decoder.layers.5.self_attn.v_proj.bias', 'model.decoder.layers.5.self_attn.q_proj.bias', 'model.decoder.layers.5.self_attn.out_proj.bias', 'model.decoder.layers.5.self_attn_layer_norm.bias', 'model.decoder.layers.5.fc1.bias', 'model.decoder.layers.5.fc2.bias', 'model.decoder.layers.5.final_layer_norm.bias', 'model.decoder.layers.6.self_attn.k_proj.bias', 'model.decoder.layers.6.self_attn.v_proj.bias', 'model.decoder.layers.6.self_attn.q_proj.bias', 'model.decoder.layers.6.self_attn.out_proj.bias', 'model.decoder.layers.6.self_attn_layer_norm.bias', 'model.decoder.layers.6.fc1.bias', 'model.decoder.layers.6.fc2.bias', 'model.decoder.layers.6.final_layer_norm.bias', 'model.decoder.layers.7.self_attn.k_proj.bias', 'model.decoder.layers.7.self_attn.v_proj.bias', 'model.decoder.layers.7.self_attn.q_proj.bias', 'model.decoder.layers.7.self_attn.out_proj.bias', 'model.decoder.layers.7.self_attn_layer_norm.bias', 'model.decoder.layers.7.fc1.bias', 'model.decoder.layers.7.fc2.bias', 'model.decoder.layers.7.final_layer_norm.bias', 'model.decoder.layers.8.self_attn.k_proj.bias', 'model.decoder.layers.8.self_attn.v_proj.bias', 'model.decoder.layers.8.self_attn.q_proj.bias', 'model.decoder.layers.8.self_attn.out_proj.bias', 'model.decoder.layers.8.self_attn_layer_norm.bias', 'model.decoder.layers.8.fc1.bias', 'model.decoder.layers.8.fc2.bias', 'model.decoder.layers.8.final_layer_norm.bias', 'model.decoder.layers.9.self_attn.k_proj.bias', 'model.decoder.layers.9.self_attn.v_proj.bias', 'model.decoder.layers.9.self_attn.q_proj.bias', 'model.decoder.layers.9.self_attn.out_proj.bias', 'model.decoder.layers.9.self_attn_layer_norm.bias', 'model.decoder.layers.9.fc1.bias', 'model.decoder.layers.9.fc2.bias', 'model.decoder.layers.9.final_layer_norm.bias', 'model.decoder.layers.10.self_attn.k_proj.bias', 'model.decoder.layers.10.self_attn.v_proj.bias', 'model.decoder.layers.10.self_attn.q_proj.bias', 'model.decoder.layers.10.self_attn.out_proj.bias', 'model.decoder.layers.10.self_attn_layer_norm.bias', 'model.decoder.layers.10.fc1.bias', 'model.decoder.layers.10.fc2.bias', 'model.decoder.layers.10.final_layer_norm.bias', 'model.decoder.layers.11.self_attn.k_proj.bias', 'model.decoder.layers.11.self_attn.v_proj.bias', 'model.decoder.layers.11.self_attn.q_proj.bias', 'model.decoder.layers.11.self_attn.out_proj.bias', 'model.decoder.layers.11.self_attn_layer_norm.bias', 'model.decoder.layers.11.fc1.bias', 'model.decoder.layers.11.fc2.bias', 'model.decoder.layers.11.final_layer_norm.bias']
+Using /cache/torch as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /cache/torch/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.16170907020568848 seconds
+Using /cache/torch as PyTorch extensions root...
+Emitting ninja build file /cache/torch/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module utils...
+Time to load utils op: 0.15081572532653809 seconds
+Parameter Offload: Total persistent parameters: 121344 in 122 params
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0026445388793945312 seconds
+  0%|                                                                                                                                                        | 1/1600 [00:02<1:08:23,  2.57s/it][WARNING|trainer_pt_utils.py:849] 2024-04-21 04:09:42,612 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  0%|▎                                                                                                                                                         | 3/1600 [00:03<23:07,  1.15it/s]
+
+  1%|█▏                                                                                                                                                       | 13/1600 [00:05<05:52,  4.50it/s]
+  1%|█▌                                                                                                                                                       | 16/1600 [00:06<05:36,  4.71it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|██▏                                                                                                                                                        | 7/500 [00:00<00:42, 11.50it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [00:46<00:00, 11.18it/s]
+{'eval_hans-lexical_overlap-contradiction_loss': 5.5078125, 'eval_hans-lexical_overlap-contradiction_accuracy': 0.0, 'eval_hans-lexical_overlap-contradiction_frac_non_target_tokens': 1.0, 'eval_hans-lexical_overlap-contradiction_runtime': 48.7245, 'eval_hans-lexical_overlap-contradiction_samples_per_second': 102.618, 'eval_hans-lexical_overlap-contradiction_steps_per_second': 10.262, 'epoch': 1.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 670/670 [01:04<00:00, 10.22it/s]
+{'eval_mnli_loss': 6.3671875, 'eval_mnli_accuracy': 0.0, 'eval_mnli_frac_non_target_tokens': 1.0, 'eval_mnli_runtime': 67.5963, 'eval_mnli_samples_per_second': 99.0, 'eval_mnli_steps_per_second': 9.912, 'epoch': 1.0}
+
+
+  2%|███                                                                                                                                                      | 32/1600 [02:57<11:47,  2.22it/s]
+{'loss': 6.1482, 'learning_rate': 6.750000000000001e-06, 'total_grad_norm': 73.40745401196168, 'epoch': 2.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [00:48<00:00, 10.83it/s]
+  2%|███▍                                                                                                                                                      | 11/500 [00:00<00:42, 11.39it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [00:49<00:00, 10.34it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊| 669/670 [01:04<00:00,  9.80it/s]
+
+  3%|████▍                                                                                                                                                    | 46/1600 [05:52<18:46,  1.38it/s]
+  3%|████▌                                                                                                                                                    | 48/1600 [05:53<12:13,  2.12it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 499/500 [00:50<00:00, 10.63it/s]
+{'eval_hans-lexical_overlap-entailment_loss': 4.58984375, 'eval_hans-lexical_overlap-entailment_accuracy': 0.0, 'eval_hans-lexical_overlap-entailment_frac_non_target_tokens': 1.0, 'eval_hans-lexical_overlap-entailment_runtime': 52.7123, 'eval_hans-lexical_overlap-entailment_samples_per_second': 94.855, 'eval_hans-lexical_overlap-entailment_steps_per_second': 9.485, 'epoch': 3.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [00:48<00:00,  9.38it/s]
+{'eval_hans-lexical_overlap-contradiction_loss': 4.1796875, 'eval_hans-lexical_overlap-contradiction_accuracy': 0.0, 'eval_hans-lexical_overlap-contradiction_frac_non_target_tokens': 1.0, 'eval_hans-lexical_overlap-contradiction_runtime': 51.2932, 'eval_hans-lexical_overlap-contradiction_samples_per_second': 97.479, 'eval_hans-lexical_overlap-contradiction_steps_per_second': 9.748, 'epoch': 3.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 670/670 [01:04<00:00, 10.49it/s]
+
+  4%|██████                                                                                                                                                   | 64/1600 [08:50<11:40,  2.19it/s]
+  1%|█▌                                                                                                                                                         | 5/500 [00:00<00:37, 13.11it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [00:48<00:00, 10.50it/s]
+{'eval_hans-lexical_overlap-entailment_loss': 3.359375, 'eval_hans-lexical_overlap-entailment_accuracy': 0.0002, 'eval_hans-lexical_overlap-entailment_frac_non_target_tokens': 0.9928, 'eval_hans-lexical_overlap-entailment_runtime': 50.3831, 'eval_hans-lexical_overlap-entailment_samples_per_second': 99.24, 'eval_hans-lexical_overlap-entailment_steps_per_second': 9.924, 'epoch': 4.0}
+
+
+
+
+
+
+
+
+
+
+

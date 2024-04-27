@@ -1,0 +1,428 @@
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight', 'model.decoder.layers.0.self_attn.query_adapter.scale', 'model.decoder.layers.0.self_attn.query_adapter.down.weight', 'model.decoder.layers.0.self_attn.query_adapter.down.bias', 'model.decoder.layers.0.self_attn.query_adapter.up.weight', 'model.decoder.layers.0.self_attn.query_adapter.up.bias', 'model.decoder.layers.0.self_attn.value_adapter.scale', 'model.decoder.layers.0.self_attn.value_adapter.down.weight', 'model.decoder.layers.0.self_attn.value_adapter.down.bias', 'model.decoder.layers.0.self_attn.value_adapter.up.weight', 'model.decoder.layers.0.self_attn.value_adapter.up.bias', 'model.decoder.layers.1.self_attn.query_adapter.scale', 'model.decoder.layers.1.self_attn.query_adapter.down.weight', 'model.decoder.layers.1.self_attn.query_adapter.down.bias', 'model.decoder.layers.1.self_attn.query_adapter.up.weight', 'model.decoder.layers.1.self_attn.query_adapter.up.bias', 'model.decoder.layers.1.self_attn.value_adapter.scale', 'model.decoder.layers.1.self_attn.value_adapter.down.weight', 'model.decoder.layers.1.self_attn.value_adapter.down.bias', 'model.decoder.layers.1.self_attn.value_adapter.up.weight', 'model.decoder.layers.1.self_attn.value_adapter.up.bias', 'model.decoder.layers.2.self_attn.query_adapter.scale', 'model.decoder.layers.2.self_attn.query_adapter.down.weight', 'model.decoder.layers.2.self_attn.query_adapter.down.bias', 'model.decoder.layers.2.self_attn.query_adapter.up.weight', 'model.decoder.layers.2.self_attn.query_adapter.up.bias', 'model.decoder.layers.2.self_attn.value_adapter.scale', 'model.decoder.layers.2.self_attn.value_adapter.down.weight', 'model.decoder.layers.2.self_attn.value_adapter.down.bias', 'model.decoder.layers.2.self_attn.value_adapter.up.weight', 'model.decoder.layers.2.self_attn.value_adapter.up.bias', 'model.decoder.layers.3.self_attn.query_adapter.scale', 'model.decoder.layers.3.self_attn.query_adapter.down.weight', 'model.decoder.layers.3.self_attn.query_adapter.down.bias', 'model.decoder.layers.3.self_attn.query_adapter.up.weight', 'model.decoder.layers.3.self_attn.query_adapter.up.bias', 'model.decoder.layers.3.self_attn.value_adapter.scale', 'model.decoder.layers.3.self_attn.value_adapter.down.weight', 'model.decoder.layers.3.self_attn.value_adapter.down.bias', 'model.decoder.layers.3.self_attn.value_adapter.up.weight', 'model.decoder.layers.3.self_attn.value_adapter.up.bias', 'model.decoder.layers.4.self_attn.query_adapter.scale', 'model.decoder.layers.4.self_attn.query_adapter.down.weight', 'model.decoder.layers.4.self_attn.query_adapter.down.bias', 'model.decoder.layers.4.self_attn.query_adapter.up.weight', 'model.decoder.layers.4.self_attn.query_adapter.up.bias', 'model.decoder.layers.4.self_attn.value_adapter.scale', 'model.decoder.layers.4.self_attn.value_adapter.down.weight', 'model.decoder.layers.4.self_attn.value_adapter.down.bias', 'model.decoder.layers.4.self_attn.value_adapter.up.weight', 'model.decoder.layers.4.self_attn.value_adapter.up.bias', 'model.decoder.layers.5.self_attn.query_adapter.scale', 'model.decoder.layers.5.self_attn.query_adapter.down.weight', 'model.decoder.layers.5.self_attn.query_adapter.down.bias', 'model.decoder.layers.5.self_attn.query_adapter.up.weight', 'model.decoder.layers.5.self_attn.query_adapter.up.bias', 'model.decoder.layers.5.self_attn.value_adapter.scale', 'model.decoder.layers.5.self_attn.value_adapter.down.weight', 'model.decoder.layers.5.self_attn.value_adapter.down.bias', 'model.decoder.layers.5.self_attn.value_adapter.up.weight', 'model.decoder.layers.5.self_attn.value_adapter.up.bias', 'model.decoder.layers.6.self_attn.query_adapter.scale', 'model.decoder.layers.6.self_attn.query_adapter.down.weight', 'model.decoder.layers.6.self_attn.query_adapter.down.bias', 'model.decoder.layers.6.self_attn.query_adapter.up.weight', 'model.decoder.layers.6.self_attn.query_adapter.up.bias', 'model.decoder.layers.6.self_attn.value_adapter.scale', 'model.decoder.layers.6.self_attn.value_adapter.down.weight', 'model.decoder.layers.6.self_attn.value_adapter.down.bias', 'model.decoder.layers.6.self_attn.value_adapter.up.weight', 'model.decoder.layers.6.self_attn.value_adapter.up.bias', 'model.decoder.layers.7.self_attn.query_adapter.scale', 'model.decoder.layers.7.self_attn.query_adapter.down.weight', 'model.decoder.layers.7.self_attn.query_adapter.down.bias', 'model.decoder.layers.7.self_attn.query_adapter.up.weight', 'model.decoder.layers.7.self_attn.query_adapter.up.bias', 'model.decoder.layers.7.self_attn.value_adapter.scale', 'model.decoder.layers.7.self_attn.value_adapter.down.weight', 'model.decoder.layers.7.self_attn.value_adapter.down.bias', 'model.decoder.layers.7.self_attn.value_adapter.up.weight', 'model.decoder.layers.7.self_attn.value_adapter.up.bias', 'model.decoder.layers.8.self_attn.query_adapter.scale', 'model.decoder.layers.8.self_attn.query_adapter.down.weight', 'model.decoder.layers.8.self_attn.query_adapter.down.bias', 'model.decoder.layers.8.self_attn.query_adapter.up.weight', 'model.decoder.layers.8.self_attn.query_adapter.up.bias', 'model.decoder.layers.8.self_attn.value_adapter.scale', 'model.decoder.layers.8.self_attn.value_adapter.down.weight', 'model.decoder.layers.8.self_attn.value_adapter.down.bias', 'model.decoder.layers.8.self_attn.value_adapter.up.weight', 'model.decoder.layers.8.self_attn.value_adapter.up.bias', 'model.decoder.layers.9.self_attn.query_adapter.scale', 'model.decoder.layers.9.self_attn.query_adapter.down.weight', 'model.decoder.layers.9.self_attn.query_adapter.down.bias', 'model.decoder.layers.9.self_attn.query_adapter.up.weight', 'model.decoder.layers.9.self_attn.query_adapter.up.bias', 'model.decoder.layers.9.self_attn.value_adapter.scale', 'model.decoder.layers.9.self_attn.value_adapter.down.weight', 'model.decoder.layers.9.self_attn.value_adapter.down.bias', 'model.decoder.layers.9.self_attn.value_adapter.up.weight', 'model.decoder.layers.9.self_attn.value_adapter.up.bias', 'model.decoder.layers.10.self_attn.query_adapter.scale', 'model.decoder.layers.10.self_attn.query_adapter.down.weight', 'model.decoder.layers.10.self_attn.query_adapter.down.bias', 'model.decoder.layers.10.self_attn.query_adapter.up.weight', 'model.decoder.layers.10.self_attn.query_adapter.up.bias', 'model.decoder.layers.10.self_attn.value_adapter.scale', 'model.decoder.layers.10.self_attn.value_adapter.down.weight', 'model.decoder.layers.10.self_attn.value_adapter.down.bias', 'model.decoder.layers.10.self_attn.value_adapter.up.weight', 'model.decoder.layers.10.self_attn.value_adapter.up.bias', 'model.decoder.layers.11.self_attn.query_adapter.scale', 'model.decoder.layers.11.self_attn.query_adapter.down.weight', 'model.decoder.layers.11.self_attn.query_adapter.down.bias', 'model.decoder.layers.11.self_attn.query_adapter.up.weight', 'model.decoder.layers.11.self_attn.query_adapter.up.bias', 'model.decoder.layers.11.self_attn.value_adapter.scale', 'model.decoder.layers.11.self_attn.value_adapter.down.weight', 'model.decoder.layers.11.self_attn.value_adapter.down.bias', 'model.decoder.layers.11.self_attn.value_adapter.up.weight', 'model.decoder.layers.11.self_attn.value_adapter.up.bias', 'lm_head.weight']
+checkpoint None
+do_train:  True
+do_eval:  True
+do_predict:  False
+resume_from_checkpoint:  None
+output_dir:  /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-47-59
+Using /cache/torch as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /cache/torch/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.1659412384033203 seconds
+Using /cache/torch as PyTorch extensions root...
+Emitting ninja build file /cache/torch/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module utils...
+Time to load utils op: 0.17081141471862793 seconds
+Parameter Offload: Total persistent parameters: 434904 in 242 params
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0021250247955322266 seconds
+  1%|▊                                                                                                              | 1/128 [00:00<02:06,  1.00it/s][WARNING|trainer_pt_utils.py:849] 2024-04-26 16:49:28,088 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  1%|▊                                                                                                              | 1/128 [00:01<02:06,  1.00it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 128/128 [00:49<00:00,  1.21s/it]
+{'loss': 1.3375, 'learning_rate': 0.0005, 'total_grad_norm': 14.697913631654545, 'epoch': 1.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▉                                                                                                              | 4/500 [00:00<00:54,  9.04it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [01:14<00:00,  7.21it/s]
+{'eval_hans-lexical_overlap-contradiction_loss': 2.353515625, 'eval_hans-lexical_overlap-contradiction_accuracy': 0.0624, 'eval_hans-lexical_overlap-contradiction_frac_non_target_tokens': 0.0, 'eval_hans-lexical_overlap-contradiction_runtime': 76.6162, 'eval_hans-lexical_overlap-contradiction_samples_per_second': 65.26, 'eval_hans-lexical_overlap-contradiction_steps_per_second': 6.526, 'epoch': 1.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 670/670 [01:36<00:00,  7.01it/s]
+{'eval_mnli_loss': 0.6181640625, 'eval_mnli_accuracy': 0.6957561267184699, 'eval_mnli_frac_non_target_tokens': 0.0, 'eval_mnli_runtime': 99.9682, 'eval_mnli_samples_per_second': 66.941, 'eval_mnli_steps_per_second': 6.702, 'epoch': 1.0}
+{'train_runtime': 302.5661, 'train_samples_per_second': 1.692, 'train_steps_per_second': 0.423, 'train_loss': 1.379120111465454, 'epoch': 1.0}
+Saving model
+Saving tokenizer
+Reloading model
+ reloaded config: OPTConfig {
+  "_name_or_path": "facebook/opt-125m",
+  "_remove_final_layer_norm": false,
+  "activation_dropout": 0.0,
+  "activation_function": "relu",
+  "architectures": [
+    "OPTForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 2,
+  "do_layer_norm_before": true,
+  "dropout": 0.1,
+  "enable_bias": true,
+  "eos_token_id": 2,
+  "ffn_dim": 3072,
+  "finetuning_task": "mnli",
+  "hidden_size": 768,
+  "init_std": 0.02,
+  "layer_norm_elementwise_affine": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 2048,
+  "model_type": "opt",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "prefix": "</s>",
+  "torch_dtype": "float16",
+  "transformers_version": "4.28.0",
+  "use_cache": true,
+  "vocab_size": 50272,
+  "word_embed_proj_dim": 768
+}
+ reloaded config: OPTConfig {
+  "_name_or_path": "facebook/opt-125m",
+  "_remove_final_layer_norm": false,
+  "activation_dropout": 0.0,
+  "activation_function": "relu",
+  "adapter_type": null,
+  "architectures": [
+    "OPTForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 2,
+  "do_layer_norm_before": true,
+  "dropout": 0.1,
+  "enable_bias": true,
+  "eos_token_id": 2,
+  "ffn_dim": 3072,
+  "finetuning_task": "mnli",
+  "hidden_size": 768,
+  "init_std": 0.02,
+  "layer_norm_elementwise_affine": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 2048,
+  "model_type": "opt",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "prefix": "</s>",
+  "torch_dtype": "float16",
+  "transformers_version": "4.28.0",
+  "untie_embeddings": false,
+  "use_adapters": false,
+  "use_cache": true,
+  "vocab_size": 50272,
+  "word_embed_proj_dim": 768
+}
+[WARNING|modeling_utils.py:3180] 2024-04-26 16:54:31,728 >> Some weights of the model checkpoint at /llmft/model/teacher_model were not used when initializing OPTWithLMClassifier: ['model.decoder.layers.8.self_attn.value_adapter.up.weight', 'model.decoder.layers.9.self_attn.query_adapter.up.bias', 'model.decoder.layers.11.self_attn.query_adapter.down.bias', 'model.decoder.layers.9.self_attn.value_adapter.up.weight', 'model.decoder.layers.11.self_attn.value_adapter.up.weight', 'model.decoder.layers.6.self_attn.query_adapter.down.bias', 'model.decoder.layers.9.self_attn.value_adapter.down.weight', 'model.decoder.layers.9.self_attn.query_adapter.down.bias', 'model.decoder.layers.3.self_attn.query_adapter.up.bias', 'model.decoder.layers.11.self_attn.query_adapter.up.bias', 'model.decoder.layers.2.self_attn.query_adapter.down.bias', 'model.decoder.layers.11.self_attn.value_adapter.up.bias', 'model.decoder.layers.6.self_attn.value_adapter.up.bias', 'model.decoder.layers.6.self_attn.query_adapter.down.weight', 'model.decoder.layers.2.self_attn.value_adapter.down.weight', 'model.decoder.layers.2.self_attn.query_adapter.up.bias', 'model.decoder.layers.1.self_attn.query_adapter.up.bias', 'model.decoder.layers.8.self_attn.value_adapter.down.bias', 'model.decoder.layers.10.self_attn.query_adapter.up.bias', 'model.decoder.layers.5.self_attn.value_adapter.up.bias', 'model.decoder.layers.1.self_attn.query_adapter.down.weight', 'model.decoder.layers.0.self_attn.value_adapter.up.bias', 'model.decoder.layers.5.self_attn.query_adapter.scale', 'model.decoder.layers.11.self_attn.value_adapter.down.weight', 'model.decoder.layers.0.self_attn.query_adapter.scale', 'model.decoder.layers.0.self_attn.query_adapter.up.bias', 'model.decoder.layers.6.self_attn.value_adapter.scale', 'model.decoder.layers.11.self_attn.query_adapter.scale', 'model.decoder.layers.2.self_attn.value_adapter.scale', 'model.decoder.layers.0.self_attn.value_adapter.down.bias', 'model.decoder.layers.9.self_attn.value_adapter.up.bias', 'model.decoder.layers.10.self_attn.value_adapter.up.bias', 'model.decoder.layers.8.self_attn.query_adapter.down.bias', 'model.decoder.layers.7.self_attn.value_adapter.down.bias', 'model.decoder.layers.3.self_attn.value_adapter.down.bias', 'model.decoder.layers.4.self_attn.value_adapter.down.weight', 'model.decoder.layers.5.self_attn.value_adapter.down.bias', 'model.decoder.layers.11.self_attn.value_adapter.down.bias', 'model.decoder.layers.8.self_attn.query_adapter.up.bias', 'model.decoder.layers.8.self_attn.value_adapter.up.bias', 'model.decoder.layers.11.self_attn.query_adapter.down.weight', 'model.decoder.layers.0.self_attn.value_adapter.down.weight', 'model.decoder.layers.1.self_attn.value_adapter.up.bias', 'model.decoder.layers.0.self_attn.query_adapter.down.weight', 'model.decoder.layers.3.self_attn.query_adapter.scale', 'model.decoder.layers.3.self_attn.query_adapter.down.weight', 'model.decoder.layers.4.self_attn.value_adapter.down.bias', 'model.decoder.layers.8.self_attn.value_adapter.scale', 'model.decoder.layers.3.self_attn.value_adapter.up.weight', 'model.decoder.layers.9.self_attn.query_adapter.scale', 'model.decoder.layers.5.self_attn.query_adapter.up.bias', 'model.decoder.layers.10.self_attn.value_adapter.up.weight', 'model.decoder.layers.9.self_attn.value_adapter.down.bias', 'model.decoder.layers.10.self_attn.value_adapter.down.weight', 'model.decoder.layers.5.self_attn.value_adapter.up.weight', 'model.decoder.layers.1.self_attn.value_adapter.down.weight', 'model.decoder.layers.6.self_attn.query_adapter.up.bias', 'model.decoder.layers.5.self_attn.value_adapter.scale', 'model.decoder.layers.9.self_attn.value_adapter.scale', 'model.decoder.layers.6.self_attn.query_adapter.up.weight', 'model.decoder.layers.1.self_attn.query_adapter.up.weight', 'model.decoder.layers.1.self_attn.value_adapter.up.weight', 'model.decoder.layers.5.self_attn.query_adapter.up.weight', 'model.decoder.layers.7.self_attn.query_adapter.down.weight', 'model.decoder.layers.9.self_attn.query_adapter.down.weight', 'model.decoder.layers.4.self_attn.value_adapter.up.weight', 'model.decoder.layers.7.self_attn.value_adapter.up.bias', 'model.decoder.layers.10.self_attn.query_adapter.scale', 'model.decoder.layers.4.self_attn.query_adapter.up.weight', 'model.decoder.layers.0.self_attn.query_adapter.up.weight', 'model.decoder.layers.0.self_attn.value_adapter.up.weight', 'model.decoder.layers.2.self_attn.value_adapter.up.weight', 'model.decoder.layers.10.self_attn.query_adapter.up.weight', 'model.decoder.layers.4.self_attn.query_adapter.down.weight', 'model.decoder.layers.2.self_attn.query_adapter.down.weight', 'model.decoder.layers.5.self_attn.value_adapter.down.weight', 'model.decoder.layers.7.self_attn.query_adapter.down.bias', 'model.decoder.layers.11.self_attn.query_adapter.up.weight', 'model.decoder.layers.5.self_attn.query_adapter.down.bias', 'model.decoder.layers.7.self_attn.value_adapter.down.weight', 'model.decoder.layers.6.self_attn.value_adapter.up.weight', 'model.decoder.layers.4.self_attn.value_adapter.scale', 'model.decoder.layers.7.self_attn.query_adapter.scale', 'model.decoder.layers.0.self_attn.value_adapter.scale', 'model.decoder.layers.7.self_attn.query_adapter.up.bias', 'model.decoder.layers.8.self_attn.query_adapter.down.weight', 'model.decoder.layers.1.self_attn.value_adapter.down.bias', 'model.decoder.layers.7.self_attn.query_adapter.up.weight', 'model.decoder.layers.10.self_attn.query_adapter.down.bias', 'model.decoder.layers.6.self_attn.query_adapter.scale', 'model.decoder.layers.6.self_attn.value_adapter.down.weight', 'model.decoder.layers.10.self_attn.value_adapter.down.bias', 'model.decoder.layers.2.self_attn.query_adapter.up.weight', 'model.decoder.layers.7.self_attn.value_adapter.up.weight', 'model.decoder.layers.5.self_attn.query_adapter.down.weight', 'model.decoder.layers.10.self_attn.value_adapter.scale', 'model.decoder.layers.8.self_attn.query_adapter.up.weight', 'model.decoder.layers.3.self_attn.value_adapter.down.weight', 'model.decoder.layers.1.self_attn.query_adapter.down.bias', 'model.decoder.layers.2.self_attn.value_adapter.up.bias', 'model.decoder.layers.4.self_attn.value_adapter.up.bias', 'model.decoder.layers.3.self_attn.query_adapter.down.bias', 'model.decoder.layers.8.self_attn.query_adapter.scale', 'model.decoder.layers.8.self_attn.value_adapter.down.weight', 'model.decoder.layers.2.self_attn.value_adapter.down.bias', 'model.decoder.layers.11.self_attn.value_adapter.scale', 'model.decoder.layers.0.self_attn.query_adapter.down.bias', 'model.decoder.layers.9.self_attn.query_adapter.up.weight', 'model.decoder.layers.3.self_attn.query_adapter.up.weight', 'model.decoder.layers.6.self_attn.value_adapter.down.bias', 'model.decoder.layers.7.self_attn.value_adapter.scale', 'model.decoder.layers.3.self_attn.value_adapter.scale', 'model.decoder.layers.1.self_attn.query_adapter.scale', 'model.decoder.layers.3.self_attn.value_adapter.up.bias', 'model.decoder.layers.4.self_attn.query_adapter.up.bias', 'model.decoder.layers.2.self_attn.query_adapter.scale', 'model.decoder.layers.10.self_attn.query_adapter.down.weight', 'model.decoder.layers.4.self_attn.query_adapter.scale', 'model.decoder.layers.1.self_attn.value_adapter.scale', 'model.decoder.layers.4.self_attn.query_adapter.down.bias']
+- This IS expected if you are initializing OPTWithLMClassifier from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing OPTWithLMClassifier from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Loaded config.
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Using adapters
+Adapter type:  None
+Adapter use_adapters:  False
+Loaded saved model.
+Trainable parameters: ['model.decoder.embed_tokens.weight', 'model.decoder.embed_positions.weight']
+Loaded saved model into trainer.
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.0033884048461914062 seconds
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.002022981643676758 seconds
+Parameter Offload: Total persistent parameters: 121344 in 122 params
+  1%|▊                                                                                                              | 1/128 [00:00<00:41,  3.03it/s][WARNING|trainer_pt_utils.py:849] 2024-04-26 16:54:34,881 >> tried to get lr value before scheduler/optimizer started stepping, returning lr=0
+  3%|███▍                                                                                                           | 4/128 [00:01<00:35,  3.46it/s]
+Using /cache/torch as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.001543283462524414 seconds
+
+ 11%|████████████                                                                                                  | 14/128 [00:03<00:22,  5.14it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 128/128 [00:26<00:00,  1.68it/s]
+{'loss': 0.9511, 'learning_rate': 0.0005, 'total_grad_norm': 20.33523347096078, 'epoch': 1.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [00:51<00:00,  8.80it/s]
+  3%|███                                                                                                           | 14/500 [00:01<00:44, 10.85it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  2%|█▉                                                                                                            | 12/670 [00:01<01:03, 10.41it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 670/670 [01:08<00:00,  9.41it/s]
+{'eval_mnli_loss': 0.84716796875, 'eval_mnli_accuracy': 0.6322474596533174, 'eval_mnli_frac_non_target_tokens': 0.008517632994620442, 'eval_mnli_runtime': 71.6226, 'eval_mnli_samples_per_second': 93.434, 'eval_mnli_steps_per_second': 9.355, 'epoch': 1.0}
+{'train_runtime': 207.8775, 'train_samples_per_second': 2.463, 'train_steps_per_second': 0.616, 'train_loss': 0.9741401672363281, 'epoch': 1.0}
+***** train metrics *****
+  epoch                    =        1.0
+  train_loss               =     0.9741
+  train_runtime            = 0:03:27.87
+  train_samples            =        512
+  train_samples_per_second =      2.463
+
+  train_steps_per_second   =      0.616

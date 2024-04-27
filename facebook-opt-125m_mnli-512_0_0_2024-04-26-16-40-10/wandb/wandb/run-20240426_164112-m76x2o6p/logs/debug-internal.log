@@ -1,0 +1,1022 @@
+2024-04-26 16:41:12,514 INFO    StreamThr :280004 [internal.py:wandb_internal():86] W&B internal server running at pid: 280004, started at: 2024-04-26 16:41:12.513420
+2024-04-26 16:41:12,518 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status
+2024-04-26 16:41:12,524 INFO    WriterThread:280004 [datastore.py:open_for_write():87] open: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/run-m76x2o6p.wandb
+2024-04-26 16:41:12,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: header
+2024-04-26 16:41:12,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: run
+2024-04-26 16:41:17,561 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 16:41:22,562 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 16:41:27,564 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 16:41:30,121 INFO    SenderThread:280004 [dir_watcher.py:__init__():211] watching files in: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files
+2024-04-26 16:41:30,121 INFO    SenderThread:280004 [sender.py:_start_run_threads():1124] run started: m76x2o6p with start time 1714149672.51286
+2024-04-26 16:41:30,122 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:41:30,136 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: check_version
+2024-04-26 16:41:30,137 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: check_version
+2024-04-26 16:41:30,228 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: run_start
+2024-04-26 16:41:30,237 DEBUG   HandlerThread:280004 [system_info.py:__init__():26] System info init
+2024-04-26 16:41:30,237 DEBUG   HandlerThread:280004 [system_info.py:__init__():41] System info init done
+2024-04-26 16:41:30,237 INFO    HandlerThread:280004 [system_monitor.py:start():194] Starting system monitor
+2024-04-26 16:41:30,237 INFO    SystemMonitor:280004 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-26 16:41:30,238 INFO    HandlerThread:280004 [system_monitor.py:probe():214] Collecting system info
+2024-04-26 16:41:30,238 INFO    SystemMonitor:280004 [interfaces.py:start():190] Started cpu monitoring
+2024-04-26 16:41:30,239 INFO    SystemMonitor:280004 [interfaces.py:start():190] Started disk monitoring
+2024-04-26 16:41:30,240 INFO    SystemMonitor:280004 [interfaces.py:start():190] Started gpu monitoring
+2024-04-26 16:41:30,243 INFO    SystemMonitor:280004 [interfaces.py:start():190] Started memory monitoring
+2024-04-26 16:41:30,244 INFO    SystemMonitor:280004 [interfaces.py:start():190] Started network monitoring
+2024-04-26 16:41:30,249 DEBUG   HandlerThread:280004 [system_info.py:probe():150] Probing system
+2024-04-26 16:41:30,262 DEBUG   HandlerThread:280004 [system_info.py:_probe_git():135] Probing git
+2024-04-26 16:41:30,276 DEBUG   HandlerThread:280004 [system_info.py:_probe_git():143] Probing git done
+2024-04-26 16:41:30,276 DEBUG   HandlerThread:280004 [system_info.py:probe():198] Probing system done
+2024-04-26 16:41:30,277 DEBUG   HandlerThread:280004 [system_monitor.py:probe():223] {'os': 'Linux-5.10.0-28-cloud-amd64-x86_64-with-glibc2.10', 'python': '3.8.13', 'heartbeatAt': '2024-04-26T16:41:30.249254', 'startedAt': '2024-04-26T16:41:12.502218', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--wandb_project_name', 'llmft-experiments', '--wandb_group_name', 'pattern-verbalizer-ft-lora', '--model_name_or_path', 'facebook/opt-125m', '--cache_dir', '/cache/hf_lms', '--task_name', 'mnli', '--pattern', '{text1} {text2} ?', '--target_tokens', 'ĠYes,ĠNo', '--dataset_cache_dir', '/cache/hf_datasets', '--max_seq_length', '256', '--output_dir', '/logfiles', '--overwrite_output_dir', '--do_train', '--use_adapter', '--adapter_type', 'lora', '--adapter_dim', '8', '--lora_alpha', '-1', '--max_train_samples', '512', '--per_device_train_batch_size', '4', '--gradient_accumulation_steps', '1', '--num_train_epochs', '1', '--warmup_ratio', '0.2', '--logging_first_step', 'true', '--logging_steps', '128', '--learning_rate', '5e-4', '--weight_decay', '0.0', '--do_eval', '--evaluation_strategy', 'epoch', '--per_device_eval_batch_size', '10', '--eval_on_hans', '--save_strategy', 'no', '--fp16', '--seed', '0', '--data_seed', '0', '--deepspeed', '/llmft/deepspeed_configs/ds_config_zero3.json', '--deepspeed_stage', '3', '--report_to', 'none'), 'state': 'running', 'program': '/llmft/ft_20240426.py', 'codePathLocal': 'ft_20240426.py', 'codePath': 'ft_20240426.py', 'git': {'remote': 'https://github.com/uds-lsv/llmft.git', 'commit': '3acc3894fa4111d9155190a98a147e3e664ff3da'}, 'email': None, 'root': '/llmft', 'host': 'dd4bd4202aa4', 'username': 'kchan303', 'executable': '/opt/conda/bin/python3', 'cpu_count': 1, 'cpu_count_logical': 2, 'cpu_freq': {'current': 2199.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 98.18611526489258, 'used': 66.13363647460938}}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 12.680400848388672}}
+2024-04-26 16:41:30,277 INFO    HandlerThread:280004 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-26 16:41:30,277 INFO    HandlerThread:280004 [system_monitor.py:probe():227] Publishing system info
+2024-04-26 16:41:30,277 DEBUG   HandlerThread:280004 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-26 16:41:30,796 DEBUG   HandlerThread:280004 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-26 16:41:30,797 INFO    HandlerThread:280004 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-26 16:41:30,805 DEBUG   SenderThread:280004 [sender.py:send():379] send: files
+2024-04-26 16:41:30,805 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-26 16:41:31,125 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_created():271] file/dir created: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/conda-environment.yaml
+2024-04-26 16:41:31,126 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_created():271] file/dir created: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-metadata.json
+2024-04-26 16:41:31,159 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-26 16:41:31,160 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: python_packages
+2024-04-26 16:41:31,161 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:41:31,161 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:41:31,176 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:41:31,976 INFO    wandb-upload_0:280004 [upload_job.py:push():131] Uploaded file /tmp/tmptp1z5po8wandb/2girh8ut-wandb-metadata.json
+2024-04-26 16:41:32,122 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_created():271] file/dir created: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/requirements.txt
+2024-04-26 16:41:33,304 DEBUG   SenderThread:280004 [sender.py:send():379] send: telemetry
+2024-04-26 16:41:33,304 DEBUG   SenderThread:280004 [sender.py:send():379] send: config
+2024-04-26 16:41:33,306 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:41:33,306 DEBUG   SenderThread:280004 [sender.py:send():379] send: telemetry
+2024-04-26 16:41:33,307 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:41:33,307 WARNING SenderThread:280004 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-04-26 16:41:33,307 DEBUG   SenderThread:280004 [sender.py:send():379] send: telemetry
+2024-04-26 16:41:34,123 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_created():271] file/dir created: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:36,014 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:41:36,064 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:41:36,069 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:41:36,069 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:41:36,069 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:41:36,069 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:41:36,070 DEBUG   SenderThread:280004 [sender.py:send():379] send: history
+2024-04-26 16:41:36,070 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: summary_record
+2024-04-26 16:41:36,070 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:41:36,125 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:36,125 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_created():271] file/dir created: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:41:37,125 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:38,126 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:39,126 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:41,127 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:41,306 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:41:43,129 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:45,130 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:46,163 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:41:46,164 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:41:46,164 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:41:47,131 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:51,166 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 16:41:51,477 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:41:53,134 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml
+2024-04-26 16:41:55,135 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:57,136 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:41:58,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:41:59,137 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:01,138 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:01,164 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:42:01,164 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:42:01,165 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:42:03,139 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:06,169 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 16:42:09,102 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:11,143 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:13,144 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:14,109 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:15,145 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:16,166 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:42:16,167 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:42:16,171 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:42:17,146 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:19,147 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:19,338 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:19,791 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,792 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,793 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,795 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,796 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,798 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,799 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,800 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,802 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,803 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,808 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,809 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,810 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,812 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,813 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,815 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,816 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,817 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,818 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,819 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,825 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,826 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,827 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,828 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,829 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,831 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,833 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,834 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,836 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,837 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,842 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,843 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,844 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,846 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,847 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,849 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,850 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,851 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,853 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,854 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,859 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,860 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,861 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,863 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,864 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,866 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,868 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,869 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,870 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,871 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,877 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,878 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,879 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,881 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,882 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,884 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,885 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,886 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,888 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,890 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,895 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,897 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,898 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,900 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,901 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,903 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,904 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,905 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,907 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,908 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,914 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,915 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,916 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,918 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,919 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,921 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,923 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,924 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,926 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,926 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,932 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,934 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,934 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,936 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,937 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,939 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,941 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,942 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,944 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,944 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,950 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,951 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,952 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,954 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,955 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,957 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,959 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,960 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,962 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,963 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,968 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,970 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,971 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,973 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,974 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,976 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,978 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,979 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,980 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,981 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,987 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,988 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,989 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,991 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,992 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,994 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,996 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,997 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:19,999 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:20,000 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:20,057 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:21,148 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:21,381 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:21,447 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:42:21,483 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,483 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,484 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,485 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,486 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,487 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,488 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,488 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,488 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,488 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,488 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,488 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,496 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,496 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,497 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,497 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,502 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,502 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,502 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,503 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,504 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,505 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,506 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,507 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,508 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,508 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,508 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,508 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,508 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,518 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,524 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,525 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,526 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,527 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,528 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,529 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,530 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,531 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,532 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,532 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,532 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,532 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,532 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,532 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,548 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,553 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,553 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,553 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,553 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,553 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,554 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,555 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,556 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,557 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,558 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,559 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,560 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,560 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,560 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,560 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,560 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,566 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,567 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,568 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,569 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,570 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,571 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,572 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,572 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,572 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,572 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,572 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,574 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,575 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,576 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,576 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,577 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,577 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,577 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,577 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,577 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,578 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,579 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,579 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,579 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,579 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:42:21,579 DEBUG   SenderThread:280004 [sender.py:send():379] send: history
+2024-04-26 16:42:21,596 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: summary_record
+2024-04-26 16:42:21,614 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:42:22,149 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:42:23,149 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:24,150 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:24,430 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:25,156 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:26,156 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml
+2024-04-26 16:42:27,157 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:29,158 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:30,244 DEBUG   SystemMonitor:280004 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-26 16:42:30,246 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:42:30,246 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:31,159 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:31,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:42:31,168 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:42:31,208 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:42:33,160 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:35,161 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:35,347 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:37,162 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:39,163 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:40,475 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:41,164 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:43,165 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:45,166 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:45,496 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:46,166 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:42:46,166 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:42:46,167 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:42:47,168 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:49,170 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:50,615 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:52,182 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:54,183 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:55,702 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:42:56,193 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:42:58,194 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:00,195 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:00,247 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:43:00,813 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:01,169 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:43:01,171 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:43:01,171 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:43:02,196 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:04,197 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:06,002 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:06,198 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:08,199 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:10,200 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:11,104 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:12,205 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:14,206 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:16,128 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:16,165 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:43:16,165 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:43:16,171 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:43:16,207 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:18,208 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:20,209 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:21,134 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:22,210 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:24,211 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:26,212 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:26,261 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:28,214 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:30,215 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:30,248 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:43:31,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:43:31,169 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:43:31,170 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:43:31,448 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:32,216 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:34,217 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:36,218 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:36,281 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:43:36,287 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:43:36,287 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:43:36,288 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:43:36,288 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:43:36,288 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:43:36,288 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:43:36,288 DEBUG   SenderThread:280004 [sender.py:send():379] send: history
+2024-04-26 16:43:36,288 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: summary_record
+2024-04-26 16:43:36,301 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:43:37,026 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:37,218 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:43:38,219 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:40,220 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:42,136 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:42,221 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:44,222 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:46,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:43:46,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:43:46,169 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:43:46,223 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:47,167 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:48,224 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:50,225 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:52,177 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:52,226 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:54,227 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:56,232 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:57,294 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:43:58,233 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:43:58,233 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml
+2024-04-26 16:44:00,234 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:00,249 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:44:01,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:44:01,169 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:44:01,170 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:44:02,239 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:03,372 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:04,246 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:06,247 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:08,248 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:08,442 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:10,250 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:12,251 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:13,482 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:14,252 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:16,169 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:44:16,169 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:44:16,175 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:44:16,253 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:18,254 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:18,493 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:20,255 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:22,256 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:23,533 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:24,256 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:26,258 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:28,259 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:28,667 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:30,250 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:44:30,260 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:31,171 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:44:31,172 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:44:31,173 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:44:32,260 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:33,674 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:34,261 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:36,262 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:38,264 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:38,859 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:40,265 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:42,266 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:43,894 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:44,267 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:46,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:44:46,168 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:44:46,173 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:44:46,268 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:48,269 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:48,959 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:50,270 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:51,857 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:44:51,861 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send():379] send: history
+2024-04-26 16:44:51,862 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: summary_record
+2024-04-26 16:44:51,904 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:44:52,271 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:52,272 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:44:54,080 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:44:54,272 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:56,273 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:58,274 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:44:59,181 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:00,252 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:45:00,275 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:00,276 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml
+2024-04-26 16:45:01,169 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:45:01,171 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:45:01,172 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:45:02,277 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:04,278 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:05,105 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:06,279 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:08,280 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:10,199 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:10,281 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:12,282 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:14,283 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:15,221 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:16,168 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:45:16,168 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:45:16,173 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:45:16,284 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:18,285 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:20,286 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:20,340 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:22,287 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:24,288 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:25,474 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:26,289 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:28,290 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:30,255 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:45:30,291 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:30,513 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:31,175 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:45:31,181 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:45:31,181 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:45:32,292 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:34,293 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:35,582 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:36,294 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:38,295 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:40,296 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:40,618 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:42,297 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:44,298 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:45,663 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:46,174 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:45:46,174 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:45:46,178 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:45:46,299 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:48,300 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:50,301 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:50,734 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:52,302 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:54,303 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:55,774 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:45:56,304 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:45:58,305 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:00,256 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:46:00,306 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:00,847 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:01,173 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:46:01,174 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:46:01,179 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:46:02,307 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:04,308 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:05,930 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:06,309 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:08,310 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:10,311 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:10,997 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:12,313 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:14,314 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:16,111 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:16,173 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:46:16,173 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:46:16,179 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:46:16,315 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:18,316 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:20,317 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:21,138 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:22,318 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:24,320 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:26,164 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:26,320 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:28,330 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:30,257 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:46:30,331 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:31,172 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-26 16:46:31,173 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: stop_status
+2024-04-26 16:46:31,179 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:46:31,401 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:32,332 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:32,551 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:46:32,555 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-26 16:46:32,562 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,564 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,564 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,565 DEBUG   SenderThread:280004 [sender.py:send():379] send: history
+2024-04-26 16:46:32,565 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: summary_record
+2024-04-26 16:46:32,579 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:46:32,580 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,581 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,581 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,581 DEBUG   SenderThread:280004 [sender.py:send():379] send: metric
+2024-04-26 16:46:32,581 DEBUG   SenderThread:280004 [sender.py:send():379] send: history
+2024-04-26 16:46:32,581 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: summary_record
+2024-04-26 16:46:32,594 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:46:33,333 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:46:34,334 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:34,400 DEBUG   SenderThread:280004 [sender.py:send():379] send: exit
+2024-04-26 16:46:34,400 INFO    SenderThread:280004 [sender.py:send_exit():586] handling exit code: 1
+2024-04-26 16:46:34,400 INFO    SenderThread:280004 [sender.py:send_exit():588] handling runtime: 304
+2024-04-26 16:46:34,409 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:46:34,409 INFO    SenderThread:280004 [sender.py:send_exit():594] send defer
+2024-04-26 16:46:34,409 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,410 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-26 16:46:34,410 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,410 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-26 16:46:34,410 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 1
+2024-04-26 16:46:34,410 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,410 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-26 16:46:34,410 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,411 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-26 16:46:34,411 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 2
+2024-04-26 16:46:34,411 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,411 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-26 16:46:34,411 INFO    HandlerThread:280004 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-26 16:46:34,411 INFO    HandlerThread:280004 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-26 16:46:34,411 DEBUG   SystemMonitor:280004 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-26 16:46:34,412 INFO    HandlerThread:280004 [interfaces.py:finish():202] Joined disk monitor
+2024-04-26 16:46:34,412 DEBUG   SystemMonitor:280004 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-26 16:46:34,446 INFO    HandlerThread:280004 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-26 16:46:34,446 INFO    HandlerThread:280004 [interfaces.py:finish():202] Joined memory monitor
+2024-04-26 16:46:34,446 INFO    HandlerThread:280004 [interfaces.py:finish():202] Joined network monitor
+2024-04-26 16:46:34,447 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,447 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-26 16:46:34,447 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 3
+2024-04-26 16:46:34,447 DEBUG   SenderThread:280004 [sender.py:send():379] send: stats
+2024-04-26 16:46:34,447 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,447 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-26 16:46:34,448 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,448 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-26 16:46:34,448 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 4
+2024-04-26 16:46:34,448 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,448 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-26 16:46:34,448 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,449 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-26 16:46:34,449 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 5
+2024-04-26 16:46:34,449 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,449 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-26 16:46:34,513 DEBUG   SenderThread:280004 [sender.py:send():379] send: summary
+2024-04-26 16:46:34,526 INFO    SenderThread:280004 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-26 16:46:34,526 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,526 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-26 16:46:34,526 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 6
+2024-04-26 16:46:34,526 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:34,527 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-26 16:46:34,527 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:34,527 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-26 16:46:34,532 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 16:46:35,356 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:46:35,369 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:35,369 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 7
+2024-04-26 16:46:35,370 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:35,370 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-26 16:46:35,370 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:35,370 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:35,370 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-26 16:46:36,357 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:36,357 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml
+2024-04-26 16:46:36,369 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:37,749 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 8
+2024-04-26 16:46:37,749 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:37,750 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:37,750 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-26 16:46:37,750 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:37,750 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-26 16:46:37,751 INFO    SenderThread:280004 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-26 16:46:37,805 INFO    SenderThread:280004 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-26 16:46:37,848 INFO    SenderThread:280004 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-26 16:46:37,867 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 9
+2024-04-26 16:46:37,869 DEBUG   SenderThread:280004 [sender.py:send():379] send: artifact
+2024-04-26 16:46:37,869 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:37,872 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-26 16:46:38,358 INFO    Thread-12 :280004 [dir_watcher.py:_on_file_modified():288] file/dir modified: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:38,371 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:39,162 INFO    SenderThread:280004 [sender.py:send_artifact():1468] sent artifact job-https___github.com_uds-lsv_llmft.git_ft_20240426.py - {'id': 'QXJ0aWZhY3Q6ODExODU2NDI5', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NzA5MDc5MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODExODU2NDI5', 'versionIndex': 2}}}
+2024-04-26 16:46:39,163 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:39,163 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-26 16:46:39,163 INFO    SenderThread:280004 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-26 16:46:39,359 INFO    SenderThread:280004 [dir_watcher.py:finish():388] scan: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files
+2024-04-26 16:46:39,359 INFO    SenderThread:280004 [dir_watcher.py:finish():402] scan save: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json wandb-summary.json
+2024-04-26 16:46:39,360 INFO    SenderThread:280004 [dir_watcher.py:finish():402] scan save: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/requirements.txt requirements.txt
+2024-04-26 16:46:39,360 INFO    SenderThread:280004 [dir_watcher.py:finish():402] scan save: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/conda-environment.yaml conda-environment.yaml
+2024-04-26 16:46:39,368 INFO    SenderThread:280004 [dir_watcher.py:finish():402] scan save: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-metadata.json wandb-metadata.json
+2024-04-26 16:46:39,369 INFO    SenderThread:280004 [dir_watcher.py:finish():402] scan save: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log output.log
+2024-04-26 16:46:39,369 INFO    SenderThread:280004 [dir_watcher.py:finish():402] scan save: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml config.yaml
+2024-04-26 16:46:39,370 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 10
+2024-04-26 16:46:39,370 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:39,370 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:39,370 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-26 16:46:39,375 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:39,375 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-26 16:46:39,375 INFO    SenderThread:280004 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-26 16:46:39,379 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:39,380 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:39,968 INFO    wandb-upload_1:280004 [upload_job.py:push():131] Uploaded file /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/requirements.txt
+2024-04-26 16:46:39,970 INFO    wandb-upload_3:280004 [upload_job.py:push():131] Uploaded file /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/config.yaml
+2024-04-26 16:46:39,999 INFO    wandb-upload_2:280004 [upload_job.py:push():131] Uploaded file /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/output.log
+2024-04-26 16:46:40,380 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:40,382 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:40,466 INFO    wandb-upload_0:280004 [upload_job.py:push():131] Uploaded file /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/files/wandb-summary.json
+2024-04-26 16:46:40,666 INFO    Thread-11 :280004 [sender.py:transition_state():614] send defer: 11
+2024-04-26 16:46:40,667 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:40,667 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-26 16:46:40,667 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:40,668 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-26 16:46:40,668 INFO    SenderThread:280004 [file_pusher.py:join():178] waiting for file pusher
+2024-04-26 16:46:40,668 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 12
+2024-04-26 16:46:40,668 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:40,668 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-26 16:46:40,668 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:40,668 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-26 16:46:40,669 INFO    SenderThread:280004 [file_stream.py:finish():614] file stream finish called
+2024-04-26 16:46:41,383 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:42,182 INFO    SenderThread:280004 [file_stream.py:finish():618] file stream finish is done
+2024-04-26 16:46:42,183 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 13
+2024-04-26 16:46:42,183 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:42,183 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:42,183 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-26 16:46:42,184 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:42,184 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-26 16:46:42,184 INFO    SenderThread:280004 [sender.py:transition_state():614] send defer: 14
+2024-04-26 16:46:42,184 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: defer
+2024-04-26 16:46:42,184 INFO    HandlerThread:280004 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-26 16:46:42,185 DEBUG   SenderThread:280004 [sender.py:send():379] send: final
+2024-04-26 16:46:42,185 DEBUG   SenderThread:280004 [sender.py:send():379] send: footer
+2024-04-26 16:46:42,185 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: defer
+2024-04-26 16:46:42,185 INFO    SenderThread:280004 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-26 16:46:42,186 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:42,186 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:42,187 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-26 16:46:42,188 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: poll_exit
+2024-04-26 16:46:42,188 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: server_info
+2024-04-26 16:46:42,189 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-26 16:46:42,199 DEBUG   SenderThread:280004 [sender.py:send_request():406] send_request: server_info
+2024-04-26 16:46:42,204 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-26 16:46:42,205 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-26 16:46:42,431 INFO    MainThread:280004 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-04-26 16:46:42,436 INFO    MainThread:280004 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-04-26 16:46:42,437 INFO    MainThread:280004 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-04-26 16:46:42,438 DEBUG   HandlerThread:280004 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-26 16:46:42,438 INFO    HandlerThread:280004 [handler.py:finish():866] shutting down handler
+2024-04-26 16:46:43,195 INFO    WriterThread:280004 [datastore.py:close():296] close: /logfiles/facebook-opt-125m_mnli-512_0_0_2024-04-26-16-40-10/wandb/wandb/run-20240426_164112-m76x2o6p/run-m76x2o6p.wandb
+2024-04-26 16:46:43,431 INFO    SenderThread:280004 [sender.py:finish():1546] shutting down sender
+2024-04-26 16:46:43,431 INFO    SenderThread:280004 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-26 16:46:43,431 INFO    SenderThread:280004 [file_pusher.py:join():178] waiting for file pusher
