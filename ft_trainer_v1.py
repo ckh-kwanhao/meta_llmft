@@ -732,6 +732,9 @@ class FtTrainer(Trainer):
                     with model.no_sync():
                         tr_loss_step = self.training_step(model, inputs)
                 else:
+                    #print("Training step")
+                    #print("Model: ", model)
+                    #print("Inputs: ", inputs)
                     tr_loss_step = self.training_step(model, inputs)
 
                 if (

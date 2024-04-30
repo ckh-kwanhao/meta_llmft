@@ -228,6 +228,7 @@ def load_hans_dataset(cache_dir=None, heuristic=None, subcase=None, label=None):
 def load_paws_qqp_dataset(path, label=None, cache_dir=None):
     # TODO(mm): there's probably a better way of doing this
     data_files = {"validation": path}
+    print("data_files", data_files)
     dataset = load_dataset("csv", data_files=data_files,
                            sep="\t", cache_dir=cache_dir)
     dataset = dataset["validation"]
@@ -255,6 +256,7 @@ def load_paws_qqp_dataset(path, label=None, cache_dir=None):
 def load_cola_ood_dataset(path, label=None, cache_dir=None):
     # TODO(mm): there's probably a better way of doing this
     data_files = {"validation": path}
+    print("data_files", data_files)
     dataset = load_dataset("csv", data_files=data_files, sep="\t", column_names=[
                            'code', 'label', 'annotation', 'sentence'], cache_dir=cache_dir)
     dataset = dataset["validation"]

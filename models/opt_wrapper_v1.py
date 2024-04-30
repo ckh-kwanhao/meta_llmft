@@ -29,16 +29,6 @@ def distillation_loss(outputs, labels, teacher_outputs, T=2.0, alpha=0.5):
     hard_loss = cross_entropy(outputs, labels) * (1.0 - alpha)
     return soft_loss + hard_loss
 
-# Define the distillation loss: more efficient version. soft loss only.
-def distillation_loss(outputs, labels, teacher_outputs, T=2.0, alpha=0.5):
-    soft_loss = kl_div(
-        log_softmax(outputs / T, dim=1),
-        softmax(teacher_outputs / T, dim=1),
-        reduction="batchmean",
-    ) 
-    # hard_loss = cross_entropy(outputs, labels) * (1.0 - alpha)
-    return soft_loss 
-
 
 class LoRAAdapter(nn.Module):
     # LoRA adapter
@@ -645,6 +635,7 @@ class OPTWithClassifier(OPTForSequenceClassification):
 class OPTWithLMClassifier(OPTForCausalLM):
     def __init__(self, config):
         super().__init__(config)
+        print("init OPTWithLMClassifier config: ", config)
 
     def _init_weights(self, module):
         super()._init_weights(module)
@@ -672,6 +663,13 @@ class OPTWithLMClassifier(OPTForCausalLM):
 
     ) -> Union[Tuple, CausalLMOutputWithPast]:
 
+        # if inputs_embeds is not None:
+
+        #     print("OPTWithLMClassifier input_embeds shape: ", inputs_embeds.shape)
+        # else:
+        #     print("OPTWithLMClassifier input embeds is None")
+
+
         output_attentions = output_attentions if output_attentions is not None else self.config.output_attentions
         output_hidden_states = (
             output_hidden_states if output_hidden_states is not None else self.config.output_hidden_states
@@ -679,6 +677,33 @@ class OPTWithLMClassifier(OPTForCausalLM):
         return_dict = return_dict if return_dict is not None else self.config.use_return_dict
 
         # decoder outputs consists of (dec_features, layer_state, dec_hidden, dec_attn)
+
+        #print("OPTWithLMClassifier model input_ids shape: ", input_ids.shape)
+        #print("OPTWithLMClassifier model class: ", self.model.__class__)
+
+        #print("model.get_input_embeddings():", self.model.get_input_embeddings())
+        #print("model.get_input_embeddings().weight:", self.model.get_input_embeddings().weight)
+        #print("model.get_input_embeddings().weight shape:", self.model.get_input_embeddings().weight.shape)
+        #print("model.get_input_embeddings().weight dtype:", self.model.get_input_embeddings().weight.dtype)
+        #print("model.get_input_embeddings().weight shape:", self.model.get_input_embeddings().weight.shape)
+        #print("model.get_input_embeddings().weight shape:", self.model.get_input_embeddings().weight.size(0))
+
+        ## print("model.get_output_embeddings():", self.model.get_output_embeddings())
+        ## print("model.get_output_embeddings().weight:", self.model.get_output_embeddings().weight)
+        ## print("model.get_output_embeddings().weight shape:", self.model.get_output_embeddings().weight.shape)
+        ## print("model.get_output_embeddings().weight dtype:", self.model.get_output_embeddings().weight.dtype)
+        ## print("self.teacher_model.embed_tokens:", self.teacher_model.embed_tokens)
+        ## print("self.model.padding_idx:", self.model.padding_idx)
+
+        #print("self.config:", self.config)
+
+        if reload_teacher:
+            #print("self.config.pad_token_id: ", self.config.pad_token_id)
+            sequence_lengths = torch.ne(
+            input_ids, self.config.pad_token_id).sum(-1) - 1
+            #print("sequence_lengths: ", sequence_lengths)
+
+
         outputs = self.model.decoder(
             input_ids=input_ids,
             attention_mask=attention_mask,
@@ -690,6 +715,7 @@ class OPTWithLMClassifier(OPTForCausalLM):
             output_hidden_states=output_hidden_states,
             return_dict=return_dict,
         )
+
 
         # logits.shape = (bsz, seq_len, vocab_size)
         logits = self.lm_head(outputs[0])
@@ -757,9 +783,10 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
     def __init__(self, config):
         super().__init__(config)
         
+
     @classmethod
     def from_pretrained_with_teacher(
-        cls,
+        self,
         pretrained_model_name_or_path: Optional,
         from_tf,
         teacher_model,
@@ -770,9 +797,11 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
         ignore_mismatched_sizes=False,
         reload_teacher=False,
     ):
-
-        cls.teacher_model = teacher_model
-        cls.teacher_model.eval() # put in eval mode, don't train.
+        self.teacher_model = teacher_model
+        self.teacher_model.eval() # put in eval mode, don't train.
+        self.reload_teacher = reload_teacher
+        print("defining OPTWithLMClassifierKD... \n")
+        print("defining OPTWithLMClassifierKD...,config: \n", config)
 
         return super().from_pretrained(
             pretrained_model_name_or_path,
@@ -782,6 +811,7 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
             revision=revision,
             use_auth_token=use_auth_token,
             ignore_mismatched_sizes=ignore_mismatched_sizes,
+
         )
 
     def forward(
@@ -798,6 +828,13 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
         return_dict: Optional[bool] = None,
         reload_teacher: Optional[bool] = None,
     ) -> Union[Tuple, CausalLMOutputWithPast]:
+        # if inputs_embeds is not None:
+
+        #     print("OPTWithLMClassifierKD input_embeds shape: ", inputs_embeds.shape)
+        # else:
+        #     print("OPTWithLMClassifierKD input embeds is None")
+        print("input_ids shape: ", input_ids.shape)
+
 
         output_attentions = output_attentions if output_attentions is not None else self.config.output_attentions
         output_hidden_states = (
@@ -806,6 +843,8 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
         return_dict = return_dict if return_dict is not None else self.config.use_return_dict
 
         # decoder outputs consists of (dec_features, layer_state, dec_hidden, dec_attn)
+
+        ## check here for embedding size issue
         outputs = self.model.decoder(
             input_ids=input_ids,
             attention_mask=attention_mask,
@@ -817,9 +856,9 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
             output_hidden_states=output_hidden_states,
             return_dict=return_dict,
         )
-
         # logits.shape = (bsz, seq_len, vocab_size)
         logits = self.lm_head(outputs[0])
+        #print(f"Logits shape: {logits.shape}")
 
         # In the classification setting we only care about the last prediction
         # Get the position of the last non-padding token
@@ -827,46 +866,52 @@ class OPTWithLMClassifierKD(OPTWithLMClassifier):
             input_ids, self.config.pad_token_id).sum(-1) - 1
         logits = logits[torch.arange(
             input_ids.shape[0], device=logits.device), sequence_lengths]
+        #print("Logits shape after sequence length: ", logits.shape)
         
         # get logits for teacher model
-        with torch.no_grad():
-            teacher_output = self.teacher_model.forward(
-                input_ids=input_ids, 
-                attention_mask=attention_mask,
-                head_mask=head_mask,
-                past_key_values=past_key_values,
-                inputs_embeds=inputs_embeds,
-                labels=labels,
-                use_cache=use_cache,
-                output_attentions=output_attentions,
-                output_hidden_states=output_hidden_states,
-                return_dict=return_dict
-            )
-        teacher_logits = teacher_output.logits
+        ## check here for embedding size issue, ISSUE HERE
 
-        # distillation loss without labels
-        logits = logits.contiguous()
-        teacher_logits = teacher_logits.contiguous()
-        teacher_logits = teacher_logits.to(logits.device)
-        T = 2.0
-        loss = kl_div(
-            log_softmax(logits / T, dim=1),
-            softmax(teacher_logits / T, dim=1),
-            reduction="batchmean",
-        )
+        #print("Teacher model input_ids shape: ", input_ids.shape)
+        #print("Teacher model class: ", self.teacher_model.__class__)
+
+        #print("self.teacher_model.get_input_embeddings():", self.teacher_model.get_input_embeddings())
+        #print("self.teacher_model.get_input_embeddings().weight:", self.teacher_model.get_input_embeddings().weight)
+        #print("self.teacher_model.get_input_embeddings().weight shape:", self.teacher_model.get_input_embeddings().weight.shape)
+        #print("self.teacher_model.get_input_embeddings().weight dtype:", self.teacher_model.get_input_embeddings().weight.dtype)
+        # print("self.teacher_model.embed_tokens:", self.teacher_model.embed_tokens)
+        # print("self.teacher_model.padding_idx:", self.teacher_model.padding_idx)
+
         
-        # loss = None
-        # if labels is not None:
-        #     logits = logits.contiguous()
-        #     # move labels to correct device to enable model parallelism
-        #     labels = labels.to(logits.device)
-        #     labels = labels.contiguous()
 
-        #     # Flatten the tokens
-        #     loss = distillation_loss(logits, labels, teacher_logits, T=2.0, alpha=0.5)
-        #     # loss_fct = CrossEntropyLoss()
-        #     # loss = loss_fct(
-        #     #     logits.view(-1, self.config.vocab_size), labels.view(-1))
+        teacher_output = self.teacher_model.forward(
+            input_ids=input_ids, 
+            attention_mask=attention_mask,
+            head_mask=head_mask,
+            past_key_values=past_key_values,
+            inputs_embeds=inputs_embeds,
+            labels=labels,
+            use_cache=use_cache,
+            output_attentions=output_attentions,
+            output_hidden_states=output_hidden_states,
+            return_dict=return_dict,
+            reload_teacher = True,
+        )
+        teacher_logits = teacher_output.logits
+        #print(f"Teacher Logits shape: {teacher_logits.shape}")
+
+
+        loss = None
+        if labels is not None:
+            logits = logits.contiguous()
+            # move labels to correct device to enable model parallelism
+            labels = labels.to(logits.device)
+            labels = labels.contiguous()
+
+            # Flatten the tokens
+            loss = distillation_loss(logits, labels, teacher_logits, T=2.0, alpha=0.5)
+            # loss_fct = CrossEntropyLoss()
+            # loss = loss_fct(
+            #     logits.view(-1, self.config.vocab_size), labels.view(-1))
 
         if not return_dict:
             output = (logits,) + outputs[1:]

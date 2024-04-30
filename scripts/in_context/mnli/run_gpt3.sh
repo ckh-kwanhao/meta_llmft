@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OUTPUT_DIR=/home/mmosbach/logs/llmft/logfiles/in_context_eval
+OUTPUT_DIR=/logfiles/in_context_eval
 mkdir -p $OUTPUT_DIR
 
 # args: task_name, num_shots, model_name_or_path, gpu, port
@@ -35,13 +35,13 @@ port=$5
 # --separate_shots_by "\n\n" \
 # --group "eval-harness" \
 
-for data_seed in 0 1 2 3 4 5 6 7 8 9
+for data_seed in 0
 do
     deepspeed \
-        --include localhost:0,1,2,3,4,5,6,7 \
+        --include localhost:0 \
         --master_port $port \
         $PROJECT_DIR/eval.py \
-        --model_name_or_path $model_name_or_path \
+       	--model_name_or_path $model_name_or_path \
         --cache_dir $HF_MODELS_CACHE \
         --task_name $task_name \
         --pattern "{text1} question: {text2} Yes or No?" \
@@ -53,7 +53,7 @@ do
         --max_seq_length 2048 \
         --output_dir $OUTPUT_DIR \
         --do_eval  \
-        --eval_task_name "hans" \
+        --eval_task_name "cola-ood"\
         --per_device_eval_batch_size 10 \
         --num_shots $num_shots \
         --balanced \
