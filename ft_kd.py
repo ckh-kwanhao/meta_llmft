@@ -15,7 +15,7 @@
 # limitations under the License.
 """ Finetuning the library models for sequence classification on GLUE."""
 # You can also adapt this script on your own text classification task. Pointers for this are left as comments.
-# kwanhao_chan modified 20240426
+
 import logging
 import os
 import random
@@ -50,7 +50,7 @@ from utils import create_dir, get_timestamp
 from task_utils import task_to_keys, load_glue_datasets, load_hans_dataset, load_mnli_mismatched_dataset, load_paws_qqp_dataset, load_cola_ood_dataset, save_dataset
 from ft_trainer import FtTrainer
 from models.gptj_wrapper import GPTJWithClassifier, GPTJWithLMClassifier
-from models.opt_wrapper import OPTWithClassifier,   
+from models.opt_wrapper import OPTWithClassifier, OPTWithLMClassifier, OPTWithLMClassifierKD
 from models.llama_wrapper import LlamaWithLMClassifier
 from models.gptneox_wrapper import GPTNeoXWithLMClassifier
 
@@ -152,19 +152,6 @@ def main():
 
     additional_evaluation_datasets = {}
 
-    print(f"data_args.eval_on_hans: {data_args.eval_on_hans}")
-    print(f"data_args.eval_on_mnli_mismatched: {data_args.eval_on_mnli_mismatched}")
-    print(f"data_args.eval_on_paws_qqp: {data_args.eval_on_paws_qqp}")
-    print(f"data_args.eval_on_cola_ood: {data_args.eval_on_cola_ood}")
-    print(f"data_args.paws_qqp_file: {data_args.paws_qqp_file}")
-    print(f"data_args.cola_ood_file: {data_args.cola_ood_file}")
-    data_args.eval_on_hans = True
-    data_args.eval_on_mnli_mismatched = True
-    data_args.eval_on_paws_qqp = True
-    data_args.eval_on_cola_ood = True
-    
-
-
     if data_args.eval_on_hans:
         for heuristic in ["lexical_overlap"]:
             # for heuristic in ["lexical_overlap", "subsequence", "constituent"]:
@@ -256,9 +243,6 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
         config.pad_token_id = tokenizer.eos_token_id
 
-
-    # model variable defined here
-
     elif "facebook/opt" in model_args.model_name_or_path:
         if ft_args.target_tokens is not None:
             model = OPTWithLMClassifier.from_pretrained(
@@ -331,20 +315,6 @@ def main():
             f"Unsupported model_name_or_path: {model_args.model_name_or_path}")
 
     # --------------- Preprocessing the raw_datasets ---------------
-
-    # Calculate number of parameters in model
-    num_params = sum(p.numel() for p in model.parameters())
-    logger.info(f"Number of parameters: {num_params}")
-    print(f"Number of parameters: {num_params}")
-
-    
-    # Calculate memory required to store model
-    mem = sum(p.numel() * p.element_size() for p in model.parameters())
-    logger.info(f"Memory required to store model: {mem}")
-    print(f"Memory required to store model: {mem}")
-    
-
-
 
     if data_args.task_name is not None:
         sentence1_key, sentence2_key = task_to_keys[data_args.task_name]
@@ -503,6 +473,7 @@ def main():
             indices = np.random.choice(
                 range(len(train_dataset)), size=max_train_samples, replace=False)
             train_dataset = train_dataset.select(indices)
+            teacher_train_indices = indices
 
     if training_args.do_eval:
         # we fix the random seed that controls the sampling of the validation data
@@ -538,8 +509,6 @@ def main():
 
         if "test" not in raw_datasets and "test_matched" not in raw_datasets:
             raise ValueError("--do_predict requires a test dataset")
-
-
         predict_dataset = raw_datasets["test_matched" if data_args.task_name in
                                        ["mnli", "mnli-original"] else "test"]
         if data_args.max_predict_samples is not None:
@@ -691,6 +660,9 @@ def main():
             eval_datasets = eval_dataset
     else:
         eval_datasets = None
+
+    wandb_args.wandb_run_name = run_name + "_teacher"
+
     trainer = FtTrainer(
         model=model,
         args=training_args,
@@ -705,6 +677,17 @@ def main():
         callbacks=None
     )
 
+    # Calculate number of parameters in model
+    num_params = sum(p.numel() for p in model.parameters())
+    logger.info(f"Number of teacher model parameters: {num_params}")
+    print(f"Number of teacher model parameters: {num_params}")
+
+    
+    # Calculate memory required to store model
+    mem = sum(p.numel() * p.element_size() for p in model.parameters())
+    logger.info(f"Memory required to store teacher model: {mem}")
+    print(f"Memory required to store teacher model: {mem}")
+
     # Training
     if training_args.do_train:
         checkpoint = None
@@ -712,19 +695,19 @@ def main():
             checkpoint = training_args.resume_from_checkpoint
         elif last_checkpoint is not None:
             checkpoint = last_checkpoint
-
         train_result = trainer.train(resume_from_checkpoint=checkpoint, ignore_keys_for_eval=["past_key_values"])
+        # Calculate number of parameters in model
+        num_params = sum(p.numel() for p in model.parameters())
+        logger.info(f"Number of teacher model parameters: {num_params}")
+        print(f"Number of teacher model parameters: {num_params}")
 
-        # get number of model parameters
-
-
-        ## Changed by kwanhao_chan 20240426
-
-        # Save model
-        # trainer.save_model()
-
-
-
+        
+        # Calculate memory required to store model
+        mem = sum(p.numel() * p.element_size() for p in model.parameters())
+        logger.info(f"Memory required to store teacher model: {mem}")
+        print(f"Memory required to store teacher model: {mem}")
+        
+        
         metrics = train_result.metrics
         max_train_samples = (
             data_args.max_train_samples if data_args.max_train_samples is not None else len(
@@ -734,34 +717,149 @@ def main():
         trainer.log_metrics("train", metrics)
         trainer.save_metrics("train", metrics)
 
-    # Calculate number of parameters in model
-    num_params = sum(p.numel() for p in model.parameters())
-    logger.info(f"Number of parameters: {num_params}")
-    print(f"Number of parameters: {num_params}")
-    # Get the number of trainable parameters
-    num_trainable_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    logger.info(f"Number of trainable parameters: {num_trainable_parameters}")
-    print(f"Number of trainable parameters: {num_trainable_parameters}")
+        kwargs = {"finetuned_from": model_args.model_name_or_path,
+                "tasks": "text-classification"}
+        if data_args.task_name is not None:
+            kwargs["language"] = "en"
+            kwargs["dataset_args"] = data_args.task_name
 
-    # Calculate memory required to store model
-    mem = sum(p.numel() * p.element_size() for p in model.parameters())
-    logger.info(f"Memory required to store model: {mem}")
-    print(f"Memory required to store model: {mem}")
+        if training_args.push_to_hub:
+            trainer.push_to_hub(**kwargs)
+        else:
+            trainer.create_model_card(**kwargs)
+
+    ## Fine tune student model
+
+    if ft_args.target_tokens is not None:
+        student_model = OPTWithLMClassifierKD.from_pretrained(
+            pretrained_model_name_or_path=model_args.model_name_or_path,
+            from_tf=bool(".ckpt" in model_args.model_name_or_path),
+            config=config,
+            cache_dir=model_args.cache_dir,
+            revision=model_args.model_revision,
+            use_auth_token=True if model_args.use_auth_token else None,
+            ignore_mismatched_sizes=model_args.ignore_mismatched_sizes,
+            teacher_model=model,
+        )
+        
+    else:
+        raise NotImplementedError(
+            f"ft_args.target_tokens is None")
+
+    student_model.config.label2id = model.config.label2id
+    student_model.config.id2label = model.config.id2label
+    
+    ## Prepare separate train dataset for student model
+
+    if data_args.task_name is not None:
+        sentence1_key, sentence2_key = task_to_keys[data_args.task_name]   
+
+    if training_args.do_train:
+        if "train" not in raw_datasets:
+            raise ValueError("--do_train requires a train dataset")
+        train_dataset = raw_datasets["train"]
+        if data_args.max_train_samples is not None:
+            # randomly select a subset of the training data
+            max_train_samples = min(
+                len(train_dataset), data_args.max_train_samples)
+            all_indices = np.arange(len(train_dataset))
+            filtered_indices = np.setdiff1d(all_indices, teacher_train_indices)
+            indices = np.random.choice(
+                filtered_indices, size=max_train_samples, replace=False)
+            train_dataset = train_dataset.select(indices)
+
+    # tokenize and encode datasets
+    with training_args.main_process_first(desc="dataset map pre-processing"):
+        if training_args.do_train:
+            train_dataset = train_dataset.map(
+                preprocess_function,
+                batched=True,
+                batch_size=1000,
+                load_from_cache_file=not data_args.overwrite_cache,
+                desc="Running tokenizer on training dataset",
+            )
+
+    # Log a few random samples from the training set:
+    if training_args.do_train:
+        for index in random.sample(range(len(train_dataset)), 1):
+            print(
+                f"Sample {index} of the training set: {train_dataset[index]}.")
+
+    # Log training examples to training_args.output_dir for reproducibility
+    if training_args.do_train:
+        save_dataset(train_dataset, path=os.path.join(
+            training_args.output_dir, f"{data_args.task_name}-train-kd.csv"))
+        
+    ## Initialize student model trainer
+
+    wandb_args.wandb_run_name = run_name + "_student"
+
+    student_trainer = FtTrainer(
+        model=student_model,
+        args=training_args,
+        train_dataset=train_dataset if training_args.do_train else None,
+        eval_dataset=eval_datasets,
+        compute_metrics=compute_metrics,
+        tokenizer=tokenizer,
+        data_collator=data_collator,
+        data_args=data_args,
+        wandb_args=wandb_args,
+        ft_args=ft_args,
+        callbacks=None
+    )
+
+
+    
+    # Training
+    if training_args.do_train:
+        checkpoint = None
+        if training_args.resume_from_checkpoint is not None:
+            checkpoint = training_args.resume_from_checkpoint
+        elif last_checkpoint is not None:
+            checkpoint = last_checkpoint
+        student_train_result = student_trainer.train(resume_from_checkpoint=checkpoint, ignore_keys_for_eval=["past_key_values"])
+        metrics = student_train_result.metrics
+        max_train_samples = (
+            data_args.max_train_samples if data_args.max_train_samples is not None else len(
+                train_dataset)
+        )
+        metrics["train_samples"] = min(max_train_samples, len(train_dataset))
+        student_trainer.log_metrics("train", metrics)
+        student_trainer.save_metrics("train", metrics)
+        # Calculate number of parameters in model
+        num_params = sum(p.numel() for p in model.parameters())
+        logger.info(f"Number of teacher model parameters: {num_params}")
+        print(f"Number of teacher model parameters: {num_params}")
+
+        
+        # Calculate memory required to store model
+        mem = sum(p.numel() * p.element_size() for p in model.parameters())
+        logger.info(f"Memory required to store teacher model: {mem}")
+        print(f"Memory required to store teacher model: {mem}")
 
 
 
+        # Calculate number of parameters in model
+        num_params = sum(p.numel() for p in student_model.parameters())
+        logger.info(f"Number of student model parameters: {num_params}")
+        print(f"Number of student model parameters: {num_params}")
+
+        
+        # Calculate memory required to store model
+        mem = sum(p.numel() * p.element_size() for p in student_model.parameters())
+        logger.info(f"Memory required to store student model: {mem}")
+        print(f"Memory required to store student model: {mem}")
 
     kwargs = {"finetuned_from": model_args.model_name_or_path,
-              "tasks": "text-classification"}
+            "tasks": "text-classification"}
     if data_args.task_name is not None:
         kwargs["language"] = "en"
         kwargs["dataset_args"] = data_args.task_name
 
     if training_args.push_to_hub:
-        trainer.push_to_hub(**kwargs)
+        student_trainer.push_to_hub(**kwargs)
     else:
-        trainer.create_model_card(**kwargs)
-
+        student_trainer.create_model_card(**kwargs)
 
 def _mp_fn(index):
     # For xla_spawn (TPUs)

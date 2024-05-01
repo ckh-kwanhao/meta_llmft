@@ -610,6 +610,20 @@ def main():
                             dataset in additional_evaluation_datasets.items()]
 
             all_results = {}
+
+
+            # Calculate number of parameters in model
+            num_params = sum(p.numel() for p in model.parameters())
+            logger.info(f"Number of parameters: {num_params}")
+            print(f"Number of parameters: {num_params}")
+
+            
+            # Calculate memory required to store model
+            mem = sum(p.numel() * p.element_size() for p in model.parameters())
+            logger.info(f"Memory required to store model: {mem}")
+            print(f"Memory required to store model: {mem}")
+
+
             for task_name, dataset in zip(eval_task_names, eval_datasets):
                 outputs = trainer.predict(
                     dataset, metric_key_prefix=task_name, ignore_keys=["past_key_values"])
@@ -663,6 +677,17 @@ def main():
                     df.to_csv(output_file, mode='a', header=False)
                 else:
                     df.to_csv(output_file)
+                    
+            # Calculate number of parameters in model
+            num_params = sum(p.numel() for p in model.parameters())
+            logger.info(f"Number of parameters: {num_params}")
+            print(f"Number of parameters: {num_params}")
+
+            
+            # Calculate memory required to store model
+            mem = sum(p.numel() * p.element_size() for p in model.parameters())
+            logger.info(f"Memory required to store model: {mem}")
+            print(f"Memory required to store model: {mem}")
 
 
 def _mp_fn(index):

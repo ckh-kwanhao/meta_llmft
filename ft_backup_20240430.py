@@ -50,7 +50,7 @@ from utils import create_dir, get_timestamp
 from task_utils import task_to_keys, load_glue_datasets, load_hans_dataset, load_mnli_mismatched_dataset, load_paws_qqp_dataset, load_cola_ood_dataset, save_dataset
 from ft_trainer import FtTrainer
 from models.gptj_wrapper import GPTJWithClassifier, GPTJWithLMClassifier
-from models.opt_wrapper import OPTWithClassifier,   
+from models.opt_wrapper import OPTWithClassifier, OPTWithLMClassifier
 from models.llama_wrapper import LlamaWithLMClassifier
 from models.gptneox_wrapper import GPTNeoXWithLMClassifier
 
@@ -151,19 +151,6 @@ def main():
         data_args, model_args)
 
     additional_evaluation_datasets = {}
-
-    print(f"data_args.eval_on_hans: {data_args.eval_on_hans}")
-    print(f"data_args.eval_on_mnli_mismatched: {data_args.eval_on_mnli_mismatched}")
-    print(f"data_args.eval_on_paws_qqp: {data_args.eval_on_paws_qqp}")
-    print(f"data_args.eval_on_cola_ood: {data_args.eval_on_cola_ood}")
-    print(f"data_args.paws_qqp_file: {data_args.paws_qqp_file}")
-    print(f"data_args.cola_ood_file: {data_args.cola_ood_file}")
-    data_args.eval_on_hans = True
-    data_args.eval_on_mnli_mismatched = True
-    data_args.eval_on_paws_qqp = True
-    data_args.eval_on_cola_ood = True
-    
-
 
     if data_args.eval_on_hans:
         for heuristic in ["lexical_overlap"]:
@@ -331,20 +318,6 @@ def main():
             f"Unsupported model_name_or_path: {model_args.model_name_or_path}")
 
     # --------------- Preprocessing the raw_datasets ---------------
-
-    # Calculate number of parameters in model
-    num_params = sum(p.numel() for p in model.parameters())
-    logger.info(f"Number of parameters: {num_params}")
-    print(f"Number of parameters: {num_params}")
-
-    
-    # Calculate memory required to store model
-    mem = sum(p.numel() * p.element_size() for p in model.parameters())
-    logger.info(f"Memory required to store model: {mem}")
-    print(f"Memory required to store model: {mem}")
-    
-
-
 
     if data_args.task_name is not None:
         sentence1_key, sentence2_key = task_to_keys[data_args.task_name]
@@ -715,9 +688,6 @@ def main():
 
         train_result = trainer.train(resume_from_checkpoint=checkpoint, ignore_keys_for_eval=["past_key_values"])
 
-        # get number of model parameters
-
-
         ## Changed by kwanhao_chan 20240426
 
         # Save model
@@ -734,22 +704,7 @@ def main():
         trainer.log_metrics("train", metrics)
         trainer.save_metrics("train", metrics)
 
-    # Calculate number of parameters in model
-    num_params = sum(p.numel() for p in model.parameters())
-    logger.info(f"Number of parameters: {num_params}")
-    print(f"Number of parameters: {num_params}")
-    # Get the number of trainable parameters
-    num_trainable_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    logger.info(f"Number of trainable parameters: {num_trainable_parameters}")
-    print(f"Number of trainable parameters: {num_trainable_parameters}")
-
-    # Calculate memory required to store model
-    mem = sum(p.numel() * p.element_size() for p in model.parameters())
-    logger.info(f"Memory required to store model: {mem}")
-    print(f"Memory required to store model: {mem}")
-
-
-
+    
 
     kwargs = {"finetuned_from": model_args.model_name_or_path,
               "tasks": "text-classification"}

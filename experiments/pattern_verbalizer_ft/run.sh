@@ -8,4 +8,8 @@ source $PROJECT_DIR/scripts/misc/setup.sh
 #bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/cola/run.sh mnli 128 40 0.5 1 1 1e-5 facebook/opt-125m 50000
 # bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 128 30 0.5 1 1 1e-5 facebook/opt-350m 60000
 #bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/qqp/run.sh qqp 128 40 0.5 1 1 1e-5 facebook/opt-1.3b 60000
-bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 512 1 0.5 1 1 1e-4 facebook/opt-125m 60000
+# bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 512 1 0.5 1 1 1e-4 facebook/opt-125m 60000
+# bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 32 40 0.5 1 1 1e-5 facebook/opt-125m 60000
+# bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 64 25 0.5 1 1 1e-5 facebook/opt-125m 60000
+# bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 128 20 0.5 1 1 1e-5 facebook/opt-125m 60000
+bash $PROJECT_DIR/scripts/pattern_verbalizer_ft/mnli/run.sh mnli 16 40 0.5 1 1 1e-5 facebook/opt-125m 60000
